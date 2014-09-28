@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Experimental Webpage</title>
+  <title>Beta Index</title>
+  <link rel="stylesheet" href="responsive-nav.css">
+<script src="responsive-nav.js"></script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
   <style type="text/css">
     body {
     background-color:black;
@@ -81,7 +85,15 @@
     text-indent:35px;
     }
     .text-decorate-yes {
-    text-decorate:underline;
+    text-decoration:none;
+    color:#585858;
+    }
+    .text-decorate-yes:hover {
+    text-decoration:underline;
+    }
+    #main-wrap {
+    	margin-left:15%;
+    	margin-right:15%;
     }
     #main-wrap a, p, h2, h3, h4, h5, h6 {
     	margin-left:3%;
@@ -94,19 +106,27 @@
     color:white;
     }
     #footer-content a {
-    color:white;
-    opacity:0.4;
+    color:#E6E6E6;
+    opacity:0.8;
+    text-decoration:none;
+    }
+    #footer-content a:hover {
+    text-decoration:underline;
+    }
+    .code-snippet {
+    	background-color:#E6E6E6;
     }
   </style>
 </head>
 <body>
   <div id="container">
-  <!--FACTOID-LOGO Don't pay any attention to this.-->
+  <!--FACTOID-LOGO-->
   	<!--<div id="logo-wrap">
   		<a href="jonw27.github.io"></a>
 	</div>  -->
   <!--NAV-WRAP-->
     <div id="nav-wrap">
+    <nav class="nav-collapse">
       <div id="nav-a">
         <a rel="nofollow" href="http://jonw27.github.io"><img src="http://mybooknotes.weebly.com/uploads/2/6/3/1/26312807/797927_orig.jpg" alt="Home" id="logo"/></a>
       </div>
@@ -133,14 +153,15 @@
     </div>
     <div id="main-wrap"><h2 style="color:black;">Welcome to my blog.</h2>
     <p>Believe it or not I have valuable info.<br><br></p>
-    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Yup, I've got valuable info&lt;/p&gt;
-    </code>
-    <p>I will post my latest study guides here, my current projects here, my awesome widgets and embeddables here, etc. Plus I'll post stuff that are random and have nothing to do with tech. Study guides and latest posts are below. Enjoy.</p>
+    <div class="code-snippet"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. |&lt;p&gt; Yup, I've got valuable info&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. |&lt;p&gt;I have my thoughts, and other things to post up.&lt;/p&gt; 
+    </code></div>
+    <p>I will post my latest study guides here, my current projects here, my awesome widgets and embeddables here, etc. Plus I'll post stuff that are random and definitely not related to tech. Study guides and latest posts are below. Enjoy.</p>
 	<h2 style="color:black;">Study Guides</h2>
 	<a href="https://docs.google.com/document/d/1KfdDj1z1T2ft9oMnmq4ufz3CQUrCMFICme-C1W31Byo/edit?usp=sharing" class="text-decorate-yes">Adv. Glob. History Test Study Guide Original</a>
 	<br>
 	<a href="https://docs.google.com/document/d/1t2FGd5CeFAtGe6fiSFGsO0eXo6-YxqEUF3H0qY6rpSU/edit?usp=sharing" class="text-decorate-yes">Adv. Glob. History Test Study Guide Editable</a>
 	<p>Related links</p>
+	<a href="http://humanorigins.si.edu/evidence/human-evolution-timeline-interactive">Interactive Timeline</a>
 	<p>Footnote 1 denotes historical inaccuracies. Find more about that here:<a href="http://en.wikipedia.org/wiki/Herodotus" class="text-decorate-yes">on a greek historian</a></p>
     <h2 style="color:black;">Recent Posts</h2>
     <p id="last-sentence">As of now there are none.</p>
@@ -148,6 +169,9 @@
     </div>
   </div>
    <!--FOOTER-->
-    <p id="footer-content">&#169; Jonathan Wong. All rights reserved. Go to <a href="http://jonw27.github.io">Website</a> or <a href="#">Widgets</a> or <a href="#">Misc.</a> or <a href="">Journey</a> or <a href="#">About.</a> Fork this on <a href="https://github.com/JonW27">Github</a></p>
+    <p id="footer-content">&#169; Jonathan Wong. All rights reserved. Go to <a href="http://jonw27.github.io">Website</a> or <a href="#">Widgets</a> or <a href="#">Misc.</a> or <a href="">Journey</a> or <a href="#">About</a>. Fork this on <a href="https://github.com/JonW27">Github</a></p>
+    <script>
+  var nav = responsiveNav(".nav-collapse");
+</script>
 </body>
 </html>
