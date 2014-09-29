@@ -65,7 +65,7 @@
    <!--FOOTER-->
     <p id="footer-content">&#169; Jonathan Wong. All rights reserved. Go to <a href="http://jonw27.github.io">Website</a> or <a href="#">Widgets</a> or <a href="#">Misc.</a> or <a href="">Journey</a> or <a href="#">About</a>. Fork this on <a href="https://github.com/JonW27">Github</a></p>
     <script>
-  var nav = responsiveNav(".nav-collapse", animate: true,
+  var nav = responsiveNav(".nav-collapse", { animate: true,
   transition: 284,
   label: "Menu", 
   insert: "before",
@@ -78,6 +78,7 @@
   init: function(){},
   open: function(){}, 
   close: function(){} 
+  });
 </script>
 </body>
 </html>
