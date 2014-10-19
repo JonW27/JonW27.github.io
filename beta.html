@@ -327,6 +327,17 @@
   #cssmenu .submenu-button.submenu-opened:after {
     display: none;
   }
+  /* Mozilla based browsers */
+::-moz-selection {
+       background-color: #FFA;
+       color: #000;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #FFA;
+       color: #000;
+}
 }
 @media all and (max-width: 768px) {
  
@@ -343,40 +354,40 @@
 <div id='cssmenu' style="margin-left:15%">
 <ul>
    <li class='active'><a href='index.html'>Home</a></li>
-   <li class='has-sub'><a href='#'>Study Guides</a>
+   <li class='has-sub'><a href='/studyguides.html'>Study Guides</a>
       <ul>
          <li class='has-sub'><a href='#'>Dunkel</a>
             <ul>
-               <li><a href='#'>Adv. Global History</a></li>
-               <li><a href='#'>AP </a></li>
+               <li><a href='/TopicsGlob.html'>Adv. Global History</a></li>
+               <li><a href='/History APs.html'>AP </a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'>La Bonne</a>
             <ul>
-               <li><a href='#'>Freshmen Comp.</a></li>
+               <li><a href='/FreshComp.html'>Freshmen Comp.</a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'>Shamazov</a>
             <ul>
-               <li><a href='#'>Music Appreciation</a></li>
+               <li><a href='/MusicAp.html'>Music Appreciation</a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'>Barrow</a>
             <ul>
-               <li><a href='#'>Art Appreciation</a></li>
+               <li><a href='/ArtAp.html'>Art Appreciation</a></li>
             </ul>
          </li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'>Services</a>
       <ul>
-         <li><a href='#'>Liteload</a></li>
-         <li><a href='#'>Jtumle</a></li>
+         <li><a href='/liteload.html'>Liteload</a></li>
+         <li><a href='/jtumle.html'>Jtumle</a></li>
       </ul>
    </li>
-   <li><a href='#'>Blog</a></li>
-   <li><a href='#'>About</a></li>
-   <li><a href='#'>Contact</a></li>
+   <li><a href='/blog.html'>Blog</a></li>
+   <li><a href='/about.html'>About</a></li>
+   <li><a href='/contact.html'>Contact</a></li>
 </ul>
 </div>
    <!--MAIN CONTENT-->
