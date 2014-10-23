@@ -1,422 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Cool things : Blog">
-    <link rel="stylesheet" href="/betastyle.css">
-    <link href="https://fontastic.s3.amazonaws.com/bzA2QrmN392eX6nJUgazWb/icons.css" rel="stylesheet">
-  <!--<link rel="stylesheet" href="responsive-nav.css">
-<script src="responsive-nav.js"></script>-->
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=1.8.3'></script>
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
-<title>Beta Index file</title>
-  <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">-->
-<style>
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #menu-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  line-height: 1;
-  display: block;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-#cssmenu:after,
-#cssmenu > ul:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-#cssmenu #menu-button {
-  display: none;
-}
-#cssmenu {
-  width: auto;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1;
-  background: #ffffff;
-}
-#menu-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3px;
-  background: #009ae1;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-#cssmenu > ul > li {
-  float: left;
-}
-#cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-center ul ul {
-  text-align: left;
-}
-#cssmenu.align-right > ul > li {
-  float: right;
-}
-#cssmenu.align-right ul ul {
-  text-align: right;
-}
-#cssmenu > ul > li > a {
-  padding: 20px;
-  font-size: 12px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000000;
-  -webkit-transition: color .2s ease;
-  -moz-transition: color .2s ease;
-  -ms-transition: color .2s ease;
-  -o-transition: color .2s ease;
-  transition: color .2s ease;
-}
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li.active > a {
-  color: #009ae1;
-}
-#cssmenu > ul > li.has-sub > a {
-  padding-right: 25px;
-}
-#cssmenu > ul > li.has-sub > a::after {
-  position: absolute;
-  top: 21px;
-  right: 10px;
-  width: 4px;
-  height: 4px;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
-  content: "";
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: border-color 0.2s ease;
-  -moz-transition: border-color 0.2s ease;
-  -ms-transition: border-color 0.2s ease;
-  -o-transition: border-color 0.2s ease;
-  transition: border-color 0.2s ease;
-}
-#cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: #009ae1;
-}
-#cssmenu ul ul {
-  position: absolute;
-  left: -9999px;
-}
-#cssmenu li:hover > ul {
-  left: auto;
-}
-#cssmenu.align-right li:hover > ul {
-  right: 0;
-}
-#cssmenu ul ul ul {
-  margin-left: 100%;
-  top: 0;
-}
-#cssmenu.align-right ul ul ul {
-  margin-left: 0;
-  margin-right: 100%;
-}
-#cssmenu ul ul li {
-  height: 0;
-  -webkit-transition: height .2s ease;
-  -moz-transition: height .2s ease;
-  -ms-transition: height .2s ease;
-  -o-transition: height .2s ease;
-  transition: height .2s ease;
-}
-#cssmenu ul li:hover > ul > li {
-  height: 32px;
-}
-#cssmenu ul ul li a {
-  padding: 10px 20px;
-  width: 160px;
-  font-size: 12px;
-  background: #333333;
-  text-decoration: none;
-  color: #dddddd;
-  -webkit-transition: color .2s ease;
-  -moz-transition: color .2s ease;
-  -ms-transition: color .2s ease;
-  -o-transition: color .2s ease;
-  transition: color .2s ease;
-}
-#cssmenu ul ul li:hover > a,
-#cssmenu ul ul li a:hover {
-  color: #ffffff;
-}
-#cssmenu ul ul li.has-sub > a::after {
-  position: absolute;
-  top: 13px;
-  right: 10px;
-  width: 4px;
-  height: 4px;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  content: "";
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transition: border-color 0.2s ease;
-  -moz-transition: border-color 0.2s ease;
-  -ms-transition: border-color 0.2s ease;
-  -o-transition: border-color 0.2s ease;
-  transition: border-color 0.2s ease;
-}
-#cssmenu.align-right ul ul li.has-sub > a::after {
-  right: auto;
-  left: 10px;
-  border-bottom: 0;
-  border-right: 0;
-  border-top: 1px solid #dddddd;
-  border-left: 1px solid #dddddd;
-}
-#cssmenu ul ul li.has-sub:hover > a::after {
-  border-color: #ffffff;
-}
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-  #cssmenu {
-    width: 100%;
-  }
-  #cssmenu ul {
-    width: 100%;
-    display: none;
-  }
-  #cssmenu.align-center > ul,
-  #cssmenu.align-right ul ul {
-    text-align: left;
-  }
-  #cssmenu ul li,
-  #cssmenu ul ul li,
-  #cssmenu ul li:hover > ul > li {
-    width: 100%;
-    height: auto;
-    border-top: 1px solid rgba(120, 120, 120, 0.15);
-  }
-  #cssmenu ul li a,
-  #cssmenu ul ul li a {
-    width: 100%;
-  }
-  #cssmenu > ul > li,
-  #cssmenu.align-center > ul > li,
-  #cssmenu.align-right > ul > li {
-    float: none;
-    display: block;
-  }
-  #cssmenu ul ul li a {
-    padding: 20px 20px 20px 30px;
-    font-size: 12px;
-    color: #000000;
-    background: none;
-  }
-  #cssmenu ul ul li:hover > a,
-  #cssmenu ul ul li a:hover {
-    color: #000000;
-  }
-  #cssmenu ul ul ul li a {
-    padding-left: 40px;
-  }
-  #cssmenu ul ul,
-  #cssmenu ul ul ul {
-    position: relative;
-    left: 0;
-    right: auto;
-    width: 100%;
-    margin: 0;
-  }
-  #cssmenu > ul > li.has-sub > a::after,
-  #cssmenu ul ul li.has-sub > a::after {
-    display: none;
-  }
-  #menu-line {
-    display: none;
-  }
-  #cssmenu #menu-button {
-    display: block;
-    padding: 20px;
-    color: #000000;
-    cursor: pointer;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-  #cssmenu #menu-button::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: block;
-    width: 15px;
-    height: 2px;
-    background: #000000;
-  }
-  #cssmenu #menu-button::before {
-    content: '';
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    display: block;
-    width: 15px;
-    height: 3px;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-  }
-  #cssmenu .submenu-button {
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    display: block;
-    border-left: 1px solid rgba(120, 120, 120, 0.15);
-    height: 52px;
-    width: 52px;
-    cursor: pointer;
-  }
-  #cssmenu .submenu-button::after {
-    content: '';
-    position: absolute;
-    top: 21px;
-    left: 26px;
-    display: block;
-    width: 1px;
-    height: 11px;
-    background: #000000;
-    z-index: 99;
-  }
-  #cssmenu .submenu-button::before {
-    content: '';
-    position: absolute;
-    left: 21px;
-    top: 26px;
-    display: block;
-    width: 11px;
-    height: 1px;
-    background: #000000;
-    z-index: 99;
-  }
-  #cssmenu .submenu-button.submenu-opened:after {
-    display: none;
-  }
-}
-@media all and (max-width: 768px) {
- 
-}
-</style>
-</head>
-<body>
-  <div id="container">
-  <!--FACTOID-LOGO-->
-  	<!--<div id="logo-wrap">
-  		<a href="jonw27.github.io"></a>
-	</div>  -->
-  <!--NAV-WRAP-->
-<div id='cssmenu' style="margin-left:15%">
-<ul>
-   <li><a href='index.html'>Home</a></li>
-   <li class='has-sub active'><a href='#'>Study Guides</a>
-      <ul>
-         <li class='has-sub'><a href='#'>Dunkel</a>
-            <ul>
-               <li><a href='#'>Adv. Global History</a></li>
-               <li><a href='#'>AP </a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'>La Bonne</a>
-            <ul>
-               <li><a href='#'>Freshmen Comp.</a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'>Shamazov</a>
-            <ul>
-               <li><a href='#'>Music Appreciation</a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'>Barrow</a>
-            <ul>
-               <li><a href='#'>Art Appreciation</a></li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li class='has-sub'><a href='#'>Services</a>
-      <ul>
-         <li><a href='#'>Liteload</a></li>
-         <li><a href='#'>Jtumle</a></li>
-      </ul>
-   </li>
-   <li><a href='#'>Blog</a></li>
-   <li><a href='#'>About</a></li>
-   <li><a href='#'>Contact</a></li>
-</ul>
-</div>
-   <!--MAIN CONTENT-->
-    <div id="divider-wrap">
-    	<h1>Jonw.27.github.io</h1>
-    	<h2>A blog</h2>
-    </div>
-    <div id="second-divider-wrap">
-    <p>This is a spacer.<br><br></p>
-    </div>
-    <div id="main-wrap"><h2 style="color:black;">STUDY GUIDES</h2>
-    <p>Believe it or not I have valuable info.<br><br></p>
-    <h1></h1>
-	<h2 style="color:black;">Study Guides</h2>
-	<div class="icon-social-drive"></div><a href="https://docs.google.com/document/d/1KfdDj1z1T2ft9oMnmq4ufz3CQUrCMFICme-C1W31Byo/edit?usp=sharing" class="text-decorate-yes">Adv. Glob. History Test Study Guide Original</a>
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Study Guides- Seuvend</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="https://fontastic.s3.amazonaws.com/bzA2QrmN392eX6nJUgazWb/icons.css" rel="stylesheet">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.onvisible.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="index.html" id="logo">Seuvend</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="">Products</a>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Services</a></li>
+									<li>
+										<a href="studyguides.html">Study Guides &hellip;</a>
+										<ul>
+											<li><a href="#">Adv. Glob.</a></li>
+											<li><a href="#">Freshmen Comp.</a></li>
+											<li><a href="#">Music Ap.</a></li>
+											<li><a href="#">Art Ap.</a></li>
+										</ul>
+									</li>
+									<li><a href="#">About</a></li>
+								</ul>
+							</li>
+							<li><a href="#left-sidebar.html">Tech Projects</a></li>
+							<li><a href="#right-sidebar.html">Software Reviews</a></li>
+							<li><a href="#no-sidebar.html">Cool Stuff</a></li>
+						</ul>
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Study Guides</a></h2>
+							<p>
+								Study guides are below. You can thank me on FB.
+							</p>
+						</header>
+						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+						<section>
+							<header>
+								<h3>Study Guides</h3>
+							</header>
+							<p>
+								<span class="icon-social-drive"></span><a href="https://docs.google.com/document/d/1KfdDj1z1T2ft9oMnmq4ufz3CQUrCMFICme-C1W31Byo/edit?usp=sharing">Adv. Glob. History Test Study Guide Original</a>
 	<br>
-	<div class="icon-social-drive"></div><a href="https://docs.google.com/document/d/1t2FGd5CeFAtGe6fiSFGsO0eXo6-YxqEUF3H0qY6rpSU/edit?usp=sharing" class="text-decorate-yes">Adv. Glob. History Test Study Guide Editable</a>
-	<p>Related links</p>
-	<a href="http://humanorigins.si.edu/evidence/human-evolution-timeline-interactive">Interactive Timeline</a>
-	<p>Footnote 1 denotes historical inaccuracies. Find more about that here:<a href="http://en.wikipedia.org/wiki/Herodotus" class="text-decorate-yes">on a greek historian</a></p>
-	<hr />
-	<p style="font-size:50px;">Srry, links for study guides currently available at here. These are most up-to-date. Sorry for your inconvenience. I will add the other pages soon.</p>
-	<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to my Blog.</h3>
-<p>Study Guides</p>
-<a href="https://docs.google.com/document/d/1KfdDj1z1T2ft9oMnmq4ufz3CQUrCMFICme-C1W31Byo/edit?usp=sharing">Adv. Glob. History Test Study Guide Original</a><br>
-<a href="https://docs.google.com/document/d/1t2FGd5CeFAtGe6fiSFGsO0eXo6-YxqEUF3H0qY6rpSU/edit?usp=sharing">Adv. Glob. History Test Study Guide Editable</a><br>
-<a href="http://quizlet.com/53797328/la-bonne-vocabulary-set-3-flash-cards/">La Bonne Vocabulary Quiz Set 3</a><br>
-<a href="https://docs.google.com/document/d/1Ct2n-UTATaofKIUTygdVqLhVhAg4eQNcdrvaKze-nLk/edit?usp=sharing">Adv. Glob. History Test 2</a><br>
-<a href="https://onedrive.live.com/redir?resid=3DEEC8ED26864B93!135&authkey=!AGgHV3NorF8S3xs&ithint=file%2cdocx">Dunkel 20 Oct. 2014 Notes</a>
-<p>Related links</p>
-<a href="https://drive.google.com/file/d/0B4eEQ4-uB6sYRzFheWpHcmozcFE/view?usp=sharing">Mesopotamia Religion PDF</a>
-<a href="https://drive.google.com/file/d/0BwgKdEqNh8q6WlcxS2dNWHlOY2c/view?usp=sharing">Paleolithic Art Presentation</a>
-<p>Footnote 1 denotes histrical inaccuracies. Find more about that here:<a href="http://en.wikipedia.org/wiki/Herodotus">on a greek historian</a></p><br>
-<p>Here I post all my new stuff and cool things that I learn. Believe it or not, I have valuable info.</p>
-    <h2 style="color:black;">Recent Posts</h2>
-    <p id="last-sentence">As of now there are none.</p>
-    <p id="spacer">This is a spacer.<br>This is a spacer.</p>
-    </div>
-  </div>
-   <!--FOOTER-->
-    <p id="footer-content">&#169; Jonathan Wong. All rights reserved. Go to <a href="http://jonw27.github.io">Website</a> or <a href="#">Widgets</a> or <a href="#">Misc.</a> or <a href="">Journey</a> or <a href="#">About</a>. Fork this on <a href="https://github.com/JonW27">Github</a></p>
-    <!--<script>
-  var nav = responsiveNav(".nav-collapse");-->
-</script>
-</body>
+	<span class="icon-social-drive"></span><a href="https://docs.google.com/document/d/1t2FGd5CeFAtGe6fiSFGsO0eXo6-YxqEUF3H0qY6rpSU/edit?usp=sharing">Adv. Glob. History Test Study Guide Editable</a> 
+	<a href="http://quizlet.com/53797328/la-bonne-vocabulary-set-3-flash-cards/">La Bonne Vocabulary Quiz Set 3</a><br>
+<span class="icon-social-drive"><a href="https://docs.google.com/document/d/1Ct2n-UTATaofKIUTygdVqLhVhAg4eQNcdrvaKze-nLk/edit?usp=sharing">Adv. Glob. History Test 2</a></span><br>
+<span class="icon-page-doc"><a href="https://onedrive.live.com/redir?resid=3DEEC8ED26864B93!135&authkey=!AGgHV3NorF8S3xs&ithint=file%2cdocx">Dunkel 20 Oct. 2014 Notes</a></span>
+							</p>
+						</section>
+					</article>
+					<hr />
+					<div class="row">
+						<article class="4u special">
+							<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Services</a></h3>
+							</header>
+							<p>
+								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+							</p>
+						</article>
+						<article class="4u special">
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+							</header>
+							<p>
+								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+							</p>
+						</article>
+						<article class="4u special">
+							<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Magna laoreet et aliquam</a></h3>
+							</header>
+							<p>
+								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+							</p>
+						</article>
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						
+						<!-- Tweets -->
+							<section class="4u">
+								<header>
+									<h2 class="icon fa-twitter circled"><span class="label">Tweets</span></h2>
+								</header>
+								<ul class="divided">
+									<li>
+										<article class="tweet">
+											Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
+											<span class="timestamp">5 minutes ago</span>
+										</article>
+									</li>
+									<li>
+										<article class="tweet">
+											Hendrerit rutrum quisque.
+											<span class="timestamp">30 minutes ago</span>
+										</article>
+									</li>
+									<li>
+										<article class="tweet">
+											Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
+											<span class="timestamp">3 hours ago</span>
+										</article>
+									</li>
+									<li>
+										<article class="tweet">
+											Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
+											<span class="timestamp">5 hours ago</span>
+										</article>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Posts -->
+							<section class="4u">
+								<header>
+									<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
+								</header>
+								<ul class="divided">
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="#">Nisl fermentum integer</a></h3>
+											</header>
+											<span class="timestamp">3 hours ago</span>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="#">Phasellus portitor lorem</a></h3>
+											</header>
+											<span class="timestamp">6 hours ago</span>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="#">Magna tempus consequat</a></h3>
+											</header>
+											<span class="timestamp">Yesterday</span>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="#">Feugiat lorem ipsum</a></h3>
+											</header>
+											<span class="timestamp">2 days ago</span>
+										</article>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Photos -->
+							<section class="4u">
+								<header>
+									<h2 class="icon fa-camera circled"><span class="label">Photos</span></h2>
+								</header>
+								<div class="row quarter no-collapse">
+									<div class="6u">
+										<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+									</div>
+									<div class="6u">
+										<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+									</div>
+								</div>
+								<div class="row quarter no-collapse">
+									<div class="6u">
+										<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+									</div>
+									<div class="6u">
+										<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+									</div>
+								</div>
+								<div class="row quarter no-collapse">
+									<div class="6u">
+										<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+									</div>
+									<div class="6u">
+										<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+									</div>
+								</div>
+							</section>
+
+					</div>
+					<hr />
+					<div class="row">
+						<div class="12u">
+							
+							<!-- Contact -->
+								<section class="contact">
+									<header>
+										<h3>How do you Seuvend?</h3>
+									</header>
+									<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+									</ul>
+								</section>
+							
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; Jonathan Wong. All rights reserved. Seuvend is a trademark of JonW27 Co.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+							
+						</div>
+					
+					</div>
+				</div>
+			</div>
+
+	</body>
 </html>
