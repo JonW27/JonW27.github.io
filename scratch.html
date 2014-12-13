@@ -1,3 +1,5 @@
+<!--Hey. This is Jonathan Wong. And this is my code below. Feel free to check it as it is on github. This file is by myself with the exception of the responsive menu. This website only required HTML, CSS, Javascipt, and JQuery. When I get the time I'll try to comment on what all these things do and how to achieve the parallax scrolling. Or you can just check tuts+. If you have a question just give
+me a call...email. seuvend@gmail.com If you find an error then please contact me or notify me. And oh yes, follow me. Ty and enjoy browsing.-->
 <DOCTYPE html>
 <html>
 <head>
@@ -20,14 +22,14 @@ background: url(https://unsplash.imgix.net/reserve/GtJALYqlRDiojsfBMQRa_373A1071
 }
 #home { 
   /*background: url(https://ununsplash.imgix.net/photo-1415226161018-3ec581fa733d?q=75&fm=jpg&s=e3b2f96ffa81ec79445ba2f90ef1c672) 50% 0 repeat fixed; min-height: 1000px;*/
-  background: url(ArtPicture.jpeg) 50% 0 repeat fixed; min-height: 1000px;
+  background: url(ArtPicture.jpeg) 50% 0 repeat fixed; min-height: 1000px; /*ArtPicture.jpeg is © Jonathan Wong. Please don't use.  */
   height: 1000px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
   position: relative; 
 }
- 
+ /*The articles are used for the scrolling effect */
 #home article { 
   height: 458px; 
   position: absolute; 
@@ -35,9 +37,16 @@ background: url(https://unsplash.imgix.net/reserve/GtJALYqlRDiojsfBMQRa_373A1071
   top: 150px; 
   width: 100%; 
 }
- 
+.menulink {
+  font-family:Courier, open-sans;
+  font-size:24px;
+  font-weight:220;
+  letter-spacing:2px;
+  text-shadow: 2px 2px 2px #000; /*There are 3 because there are 3 dimensions x, y, and z*/
+}	
+} 
 #about { 
-  background: url(https://unsplash.imgix.net/reserve/GtJALYqlRDiojsfBMQRa_373A1071.jpg?q=75&fm=jpg&s=4aa1f8be0ed2abcc17d87554f9d55ad6) 50% 0 repeat fixed; min-height: 1000px; 
+  background: url(https://unsplash.imgix.net/reserve/GtJALYqlRDiojsfBMQRa_373A1071.jpg?q=75&fm=jpg&s=4aa1f8be0ed2abcc17d87554f9d55ad6) 50% 0 repeat fixed; min-height: 1000px; /*Unsplash has many great no-attribution photos. You can also check pixabay and creative commons.*/
   height: 1000px; 
   margin: 0 auto; 
   width: 100%; 
@@ -89,10 +98,10 @@ document.createElement("section");</script>
   <section id="home" data-type="background" data-speed="10"> 
   <nav class="nav-collapse icon-menu-1" style="font-size:24px;">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#" class="menulink">Home</a></li>
+    <li><a href="#" class="menulink">About</a></li>
+    <li><a href="#" class="menulink">Projects</a></li>
+    <li><a href="#" class="menulink">Contact</a></li>
   </ul>
 </nav>
   <article><p  style="font-family:Courier, Ubuntu, Open Sans; font-weight:400; text-shadow: 2px, 2px, #000; font-size:54px;">&lt;HEY, I'M JONATHAN WONG&gt;</p></article>
