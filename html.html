@@ -4,7 +4,6 @@
 <title>Lets learn HTML</title>
 <style>
 .learn {
-  font-family:Arial;
   font-weight:200;
   position:relative;
 }
@@ -42,14 +41,20 @@ src: url(Big John.otf);
 font-family: SlimJoe;
 src: url(Slim Joe.otf);
 }
+.reg {
+  font-family:"Slim Joe";
+}
+.head {
+  font-family:"Big John";
+}
 </style>
 </head>
 <body>
 <div class="coolbg red" style="top:60px;"><p class="plogo">Quicklearn &lt;html&gt;</p></div>
 <div class="coolbg green" style="left:50px;"></div>
-<h1 class="learn">HTML5 and CSS</h1>
-<h2 class="learn">This tutorial gets straight to the point. You may be a newbie or more specifically, a person who has learned the old HTML. This tutorial is geared toward teaching these type of people the newer HTML, HTML5. Thus, a list of deprecated- outdated tags will be listed. These tags are no longer in use.</h2>
-<ul>
+<h1 class="learn head">HTML5 and CSS</h1>
+<h2 class="learn reg">This tutorial gets straight to the point. You may be a newbie or more specifically, a person who has learned the old HTML. This tutorial is geared toward teaching these type of people the newer HTML, HTML5. Thus, a list of deprecated- outdated tags will be listed. These tags are no longer in use.</h2>
+<ul class="reg">
   <li><code>&lt;marquee&gt;</code></li>
   <li><code>&lt;font&gt;</code></li>
   <li><code>&lt;center&gt;</code></li>
