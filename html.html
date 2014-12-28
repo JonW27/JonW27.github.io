@@ -5,6 +5,11 @@
 <title>Lets learn HTML</title>
 <script type="text/javascript" src="code-highlighter-master/CodeHighlighter.js"> </script>
 <script type="text/javascript" src="code-highlighter-master/html.js"> </script>
+<script>
+  answer() {
+    document.getElementById("p1").innerHTML = "Hypertext Markup Language. if you didn't know this then please review";
+  }
+</script>
 <style>
 .learn {
   font-weight:200;
@@ -215,9 +220,13 @@ they cannot mess with the language and actually try the real thing out. For the 
   <li>The table element &lt;table&gt;</li>
   <li>The form element &lt;form&gt;</li>
   <li>The ordered list element &lt;ol&gt;</li>
-  <li>THe unordered list element &lt;ul&gt;</li>
+  <li>The unordered list element &lt;ul&gt;</li>
 </ul>
 </code>
-<p class="lang reg">Each of these elements (these are not the only ones) have attributes to help determine things. For example, the &lt;a&gt; element has the attribute href which tells what url the link will link to and target which tells if the url will be opened in a new tab. Elements like &lt;table&gt; have elements like &lt;tr&gt; which defines a table row and &lt;td&gt; which defines a single cell. The elements &lt;ol&gt; and &lt;ul&gt; also have the subelement &lt;li&gt; which defines a single list item. All of these elements, attributes, and subelements will be discussed and placed in a to-be-made Reference page.</p>
+<p class="learn reg">Each of these elements (these are not the only ones) have attributes to help determine things. For example, the &lt;a&gt; element has the attribute href which tells what url the link will link to and target which tells if the url will be opened in a new tab. Elements like &lt;table&gt; have elements like &lt;tr&gt; which defines a table row and &lt;td&gt; which defines a single cell. The elements &lt;ol&gt; and &lt;ul&gt; also have the subelement &lt;li&gt; which defines a single list item. All of these elements, attributes, and subelements will be discussed and placed in a to-be-made Reference page.</p>
+<br><br><br>
+<h3 class="learn head">Quick Quiz Question (QQQ)</h3>
+<p onclick="answer()" id="p1" class="learn reg">What does HTML stand for?</p>
+
 </body>
 </html>
