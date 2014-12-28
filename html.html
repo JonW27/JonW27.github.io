@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
 <head>
 <title>Lets learn HTML</title>
 <style>
 .learn {
-  font-family:Arial;
   font-weight:200;
   position:relative;
 }
@@ -28,23 +28,147 @@ code {
   background:rgba(245,238,238,0.8);
 }
 .plogo {
-  font-family:"Helvetica";
+  font-family:"Big John";
   color:white;
   text-transform:uppercase;
   top:60px;
   position:relative;
+}
+@font-face {
+font-family: BigJohn;
+src: url(Big John.otf);
+}
+@font-face {
+font-family: SlimJoe;
+src: url(Slim Joe.otf);
+}
+.reg {
+  font-family:"Slim Joe";
+}
+.head {
+  font-family:"Big John";
+}
+.regframe {
+  width:80%;
+  margin-left:20%;
+  margin-right:20%;
+  margin-top:20%;
+  margin-bottom:20%;
+  height:400px;
 }
 </style>
 </head>
 <body>
 <div class="coolbg red" style="top:60px;"><p class="plogo">Quicklearn &lt;html&gt;</p></div>
 <div class="coolbg green" style="left:50px;"></div>
-<h1 class="learn">HTML5 and CSS</h1>
-<h2 class="learn">This tutorial gets straight to the point. You may be a newbie or more specifically, a person who has learned the old HTML. This tutorial is geared toward teaching these type of people the newer HTML, HTML5. Thus, a list of deprecated- outdated tags will be listed. These tags are no longer in use.</h2>
-<ul>
+<h1 class="learn head">HTML5 and CSS</h1>
+<h2 class="learn reg">This tutorial gets straight to the point. You may be a newbie or more specifically, a person who has learned the old HTML. This tutorial is geared toward teaching these type of people the newer HTML, HTML5. Thus, a list of deprecated- outdated tags will be listed. These tags are no longer in use.</h2>
+<ul class="reg">
   <li><code>&lt;marquee&gt;</code></li>
   <li><code>&lt;font&gt;</code></li>
   <li><code>&lt;center&gt;</code></li>
 </ul>
+<br>
+<br>
+<br>
+<h3 class="learn head">Source Code</h3>
+<p class="learn reg">Lets begin by checking source code. You should be able to access the source code by either right-clicking with your mouse and clicking VIew Source Code or by checking the VIew menu at the top where there you should find a submenu called Developer or Source Code. After you have accessed this look over the code and see what makes a website. Below is the source code for this webpage.</p>
+<code>
+  &lt;!DOCTYPE html&gt;
+  <br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Lets learn HTML&lt;/title&gt;<br>
+&lt;style&gt;<br>
+.learn {
+  font-weight:200;
+  position:relative;
+}<br>
+.coolbg {
+  width:200px;
+  height:200px;
+  z-index:-1;
+  position:relative;
+}<br>
+.red {
+  background:rgba(255,0,0,0.6);
+}<br>
+.green {
+  background:rgba(0,255,0,0.6);
+}<br>
+.blue {
+  background:rgba(0,0,255,0.6);
+}<br>
+code {
+  padding:3px;
+  background:rgba(245,238,238,0.8);
+}<br>
+.plogo {
+  font-family:"Big John";
+  color:white;
+  text-transform:uppercase;
+  top:60px;
+  position:relative;
+}<br>
+@font-face {
+font-family: BigJohn;
+src: url(Big John.otf);
+}<br>
+@font-face {
+font-family: SlimJoe;
+src: url(Slim Joe.otf);
+}<br>
+.reg {
+  font-family:"Slim Joe";
+}<br>
+.head {
+  font-family:"Big John";
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;div class="coolbg red" style="top:60px;"&lt;&gt;p class="plogo"&gt;Quicklearn &lt;html&gt;&lt;/p&gt;&lt;/div&gt;<br>
+&lt;div class="coolbg green" style="left:50px;"&gt;&lt;/div&gt;<br>
+&lt;h1 class="learn head"&gt;HTML5 and CSS&lt;/h1&gt;<br>
+&lt;h2 class="learn reg"&gt;This tutorial gets straight to the point. You may be a newbie or more specifically, a person who has learned the old HTML. This tutorial is geared toward teaching these type of people the newer HTML, HTML5. Thus, a list of deprecated- outdated tags will be listed. These tags are no longer in use.&lt;/h2&gt;
+<br>&lt;ul class="reg"&gt;<br>
+  &lt;li&gt;&lt;code&gt;&lt;marquee&gt;&lt;/code&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;code&gt;&lt;font&gt;&lt;/code&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;code&gt;&lt;center&gt;&lt;/code&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;br&gt;<br>
+&lt;br&gt;<br>
+&lt;br&gt;<br>
+&lt;h3 class="learn head"&gt;Source Code&lt;/h3&gt;<br>
+&lt;p class="learn reg"&gt;Lets begin by checking source code. You should be able to access the source code by either right-clicking with your mouse and clicking VIew Source Code or by checking the VIew menu at the top where there you should find a submenu called Developer or Source Code. After you have accessed this look over the code and see what makes a website. Below is the source code for this webpage.&lt;/p&gt;
+<br>&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+</code>
+<br>
+<br>
+<br>
+<h3 class="learn head">HTML Overview</h3>
+<p class="learn reg">HTML stands for Hypertext Markup Language. It is used in building website ands doing web design. As tech expanded and became more advanced HTML had to advance also. This led to different variations of HTML with different !DOCTYPE declarations. The one I will be teaching you is the latest one, HTML5.</p>
+<a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+</a>
+<br><br><br>
+<h3 class="learn head">Syntax</h3>
+<p class="learn reg">HTML tags are formatted in the following manner:</p><br><br>
+<div class="svg-layer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="" pageAlignment="none" x="0px" y="0px" width="842px" height="595px" viewBox="0 0 842 595" enable-background="new 0 0 842 595" xml:space="preserve"><defs xmlns=""/><g xmlns="" type="LAYER" name="workspace" id="workspace" locked="true"/><g xmlns="" type="LAYER" name="Layer 01" id="Layer 01"><text type="textBox" transform="matrix(0.9999999999999991 0 0 0.9999999999999998 48.503727676061146 239.752447485706)" width="743.9241280353625" height="52" stroke-miterlimit="3" stroke="none" fill="#000000" font-family="Big John" font-size="32" text-align="left" text-anchor="start"><tspan x="0" y="46"><![CDATA[<p id="helloworld">Hello World!</p>]]></tspan></text><path transform="matrix(1 0 0 1 65.0731462925852 203.89779559118233)" width="1.1923847695390748" height="45.31062124248501" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L-1.1923847695390748,45.31062124248501 "/><path transform="matrix(1 0 0 1 64.94689378757519 208.6953907815631)" width="1.0661322645290738" height="40.51302605210424" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L-1.0661322645290738,40.51302605210424 "/><path transform="matrix(1 0 0 1 64.94689378757522 208.6953907815631)" width="356.64929859719433" height="4.74148296593188" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L356.64929859719433,4.74148296593188 "/><path transform="matrix(1 0 0 1 60.303607214428894 199.12825651302603)" height="65.58116232464931" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L0,65.58116232464931 "/><path transform="matrix(1 0 0 1 113.96092184368737 232.51503006012024)" width="315.98196392785565" height="152.62525050100197" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L315.98196392785565,152.62525050100197 "/><path transform="matrix(1 0 0 1 54.34168336673349 212.24448897795588)" width="1.1923847695390748" height="44.11823647294591" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L-1.1923847695390748,44.11823647294591 "/><path id="a" transform="matrix(1 0 0 1 54.34168336673349 212.24448897795588)" width="364.86973947895785" height="4.769539078156299" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L364.86973947895785,-4.769539078156299 "/><path transform="matrix(1 0 0 1 55.534068136272566 166.93386773547093)" width="4.769539078156328" height="73.92785571142286" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L4.769539078156328,73.92785571142286 "/><path transform="matrix(1 0 0 1 -113.14775442668899 139.43016293107254)" width="267.6949827833725" height="71.50444964178595" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L267.6949827833725,71.50444964178595 "/><path transform="matrix(1 0 0 1 -113.14775442668898 139.43016293107254)" width="305.8136084514001" height="71.00616695331499" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L305.8136084514001,71.00616695331499 "/><path transform="matrix(1 0 0 1 -120.93887775551099 138.31663326653305)" width="59.619238476953896" height="87.04408817635274" stroke-miterlimit="3" stroke="none" fill="#000000" d="M0,0 L59.619238476953896,87.04408817635274 "/><path width="3.6096551339465535" height="44.11823647294591" stroke-miterlimit="3" stroke="none" fill="#000000" d="M59.11122244488979,207.47494989979958 C59.11122244488979,213.45629697254623 66.368971102474,251.5931863727455 60.303607214428894,251.5931863727455 "/><path width="346.98396793587165" height="12.504735222092165" stroke-miterlimit="3" stroke="none" fill="#000000" d="M60.303607214428894,207.47494989979958 C130.0010274775038,207.47494989979958 245.35396598465056,188.47370008439586 313.08917835671343,211.05210420841684 C332.49363501404423,217.5202564275271 359.56518671318827,201.51302605210418 379.86272545090173,201.51302605210418 C382.44952581660846,201.51302605210418 407.28757515030054,200.18263548594825 407.28757515030054,202.70541082164328 "/><path width="4.769539078156413" height="44.11823647294591" stroke-miterlimit="3" stroke="none" fill="#000000" d="M407.28757515030054,202.70541082164328 C407.28757515030054,217.09315777079394 412.05711422845695,234.87804680485198 412.05711422845695,246.8236472945892 "/><path width="0.6382843247033065" height="39.34869739478961" stroke-miterlimit="3" stroke="none" fill="#000000" d="M148.54008016032068,299.2885771543086 C149.98743690567963,316.6568580986162 148.54008016032068,327.3231584306616 148.54008016032068,338.6372745490982 "/><path width="234.89979959919836" height="3.577154308617253" stroke-miterlimit="3" stroke="none" fill="#000000" d="M148.54008016032068,335.06012024048096 C201.70275624091775,335.06012024048096 255.36882896424592,331.4829659318637 307.12725450901803,331.4829659318637 C324.6155644622579,331.4829659318637 342.10387441549767,331.4829659318637 359.59218436873743,331.4829659318637 C365.3643989404792,331.4829659318637 383.4804005133893,332.6753507014028 383.43987975951904,332.6753507014028 "/><path width="7.081916222228358" height="33.38677354709421" stroke-miterlimit="3" stroke="none" fill="#000000" d="M383.43987975951904,332.6753507014028 C382.291674938092,320.04509766570567 371.64382624036455,299.2885771543086 378.67034068136275,299.2885771543086 "/><path width="5.961923847695402" height="66.77354709418836" stroke-miterlimit="3" stroke="none" fill="#000000" d="M558.7204408817635,372.02404809619236 C558.7204408817635,348.48794863656883 552.7585170340681,328.9967897813935 552.7585170340681,305.250501002004 "/><path width="70.3507014028055" height="54.76444971153276" stroke-miterlimit="3" stroke="none" fill="#000000" d="M725.6543086172344,238.47695390781564 C725.6543086172344,163.68584108456614 726.6049643883674,187.20440881763525 655.3036072144289,187.20440881763525 "/><text type="textBox" transform="matrix(1 0 0 1 111.57615230460922 153.81763527054107)" width="238.4769539078156" height="25" stroke-miterlimit="3" stroke="none" fill="#000000" font-family="Big John" font-size="22" text-align="left" text-anchor="start"><tspan x="0" y="22"><![CDATA[Starting Tag]]></tspan></text><text type="textBox" transform="matrix(1 0 0 1 226.04509018036075 346.9839679358717)" width="238.4769539078156" height="25" stroke-miterlimit="3" stroke="none" fill="#000000" font-family="Big John" font-size="22" text-align="left" text-anchor="start"><tspan x="0" y="22"><![CDATA[Unique ID]]></tspan></text><text type="textBox" transform="matrix(1 0 0 1 528.9108216432866 382.75551102204406)" width="238.47695390781564" height="25" stroke-miterlimit="3" stroke="none" fill="#000000" font-family="Big John" font-size="22" text-align="left" text-anchor="start"><tspan x="0" y="22"><![CDATA[Content]]></tspan></text><text type="textBox" transform="matrix(1 0 0 1 640.9949899799598 146.6633266533066)" width="238.47695390781553" height="25" stroke-miterlimit="3" stroke="none" fill="#000000" font-family="Big John" font-size="22" text-align="left" text-anchor="start"><tspan x="0" y="22"><![CDATA[Closing Tag]]></tspan></text></g></svg></div>
+<h3 class="learn head">Format and General Rules</h3>
+<p class="learn reg">All HTML documents need at minimum the following things:</p>
+<ul class="learn reg">
+  <li>!DOCTYPE</li>
+  <li>&lt;html&gt; and its closing tag</li>
+  <li>&lt;head&gt; and its closing tag</li>
+  <li>&lt;title&gt; and its closing tag</li>
+  <li>&lt;body&gt; and its closing tag</li>
+</ul>
+<p class="learn reg">The bare skin is shown below:</p>
+<code>
+TBD...
+</code>
 </body>
 </html>
