@@ -1,4 +1,10 @@
 Seuvend
 ================
 
-The magic of Seuvend begins here. Seuvend is a study guide provider and personal blog. It also will feature tons of cool projects and interesting news.
+My personal projects. Sorry for the lousy home template. I'll fix it up.
+
+This contains several things:
+1. My personal blog
+2. Rooter applescript application
+3. Some other random stuff
+
