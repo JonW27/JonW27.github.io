@@ -6,6 +6,21 @@
     <title>Foundation | Test</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <style>
+      #catch {
+        
+      }
+      .textotexto {
+        text-align:center;
+      }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#catch").fadeIn("slow");
+        $("#catch").addClass("textotexto");
+      });  
+    </script>
   </head>
   <body>
 <div class="off-canvas-wrap off-canvas-example move-right" data-offcanvas="">
@@ -50,8 +65,8 @@
       <div class="row">
         <div class="large-12 columns">
           <br>
-          <h4 class="">Web Developer</h4>
-          <p>Hey I <i>"fancy myself a web developer"</i>. Short Rep. below.</p>
+          <h1 id="catch">I fancy myself a web developer</h1>
+          <a class="button" href="#" data-reveal-id="myModal" style="text-align:center;">Look at Rep.</a>
           <!--<a href="#" data-reveal-id="firstModal" class="radius button">Look at Rep.</a>-->
           <!--<div id="firstModal" class="reveal-modal" data-reveal="" style="display: none; opacity: 1; visibility: hidden; top: -6548.66656112671px;">
   <h2>Short Rep.</h2>
@@ -69,7 +84,6 @@
     <a class="exit-off-canvas"></a>
   </div>
 </div>-->
-<a class="button" href="#" data-reveal-id="myModal">Look at Rep.</a>
 <div class="reveal-modal" id="myModal" data-reveal="">
 <h2>Short Rep.</h2>
   <ul class="small-block-grid-2 large-block-grid-4">
