@@ -1,3 +1,4 @@
+<!--Stolen from Khan Academy: "Peeking under the hood?" Feel free to browse. Just note that this is really really messy.-->
 <!DOCTYPE HTML>
 <!--
 	Sorry, currently work in progress. Decided to trash HTML5UP. 
@@ -5,17 +6,41 @@
 <html>
 	<head>
 		<title>Seuvend- Jonw27.github.io</title>
-		<META http-equiv="refresh" content="5;URL=http://jonw27.github.io/error">
-		<!--<meta http-equiv="content-type" content="text/html; charset=utf-8" />-->
 		<meta name="description" content="Blog" />
 		<meta name="keywords" content="Blog" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
 		<style>
-			#Image-Maps-Com-image-maps-2015-02-02-191522 {
-				position:absolute;
-				left:10px;
-			}
+		body {
+         background: url(bg-web.png);
+        image-size:cover;
+            height:100%;
+        }
+        #container {
+            position:relative;
+        }
+        p {
+        font-family: 'Open Sans', sans-serif;    
+        font-weight: 100;        
+        }
+        .footer-recall {
+            width: 100%;
+            padding: 10px;
+            background:rgba(255,255,255,0.4);
+            margin-left: 5%;
+        }
 		</style>
-
+                        <script>
+       function animationOctacat() {
+         var setOctacatFree = document.getElementById("octacat").style.marginLeft;
+        setOctacatFree = setOctacatFree + 10%;
+        document.getElementById("octacat").style.marginLeft = setOctacatFree;
+        console.log("Working");
+        console.log(setOctacatFree);
+       }
+        console.log("Step 1");
+        var e1 = document.getElementById("specie");                    
+    e1.addEventListener("click", animationOctacat, true);
+</script>
 		<!-- Begin Inspectlet Embed Code -->
 <script type="text/javascript" id="inspectletjs">
 	window.__insp = window.__insp || [];
@@ -69,18 +94,15 @@ qacct:"p-FS9aGEuJEjbDy"
         mf.src = "//cdn.mouseflow.com/projects/0b7d3fd3-9376-4d36-91fd-1c0075bdd9ad.js";
         document.getElementsByTagName("head")[0].appendChild(mf);
       })();
-    </script>
-    <h1 id="notification" style="font-size:18px; font-family:Arial, Helvetica;">NOTIFICATION: THIS WEBSITE INDEX PAGE IS UNDERGOING REDEVELOPMENT. SORRY FOR THE INCONVENIENCE. ALL OTHER PAGES SHOULD STILL BE AVAILABLE. Check <a href="https://github.com/JonW27/JonW27.github.io">the Github page</a> where I host my website for all available url paths.</h1>
-<!--BEGIN ACTUAL STUFF-->
-<img id="Image-Maps-Com-image-maps-2015-02-02-191522" src="menu-bar.png" border="0" width="1200" height="750" orgWidth="1200" orgHeight="750" usemap="#image-maps-2015-02-02-191522" alt="Unfortunately your browser or computer was unable to load this website's nav bar. Please check to make sure your browser supports HTML5. IF not please consider upgrading." />
-<map name="image-maps-2015-02-02-191522" id="ImageMapsCom-image-maps-2015-02-02-191522">
-<area id="home" alt="Home" title="Home" href="http://jonw27.github.io" shape="rect" coords="74,281,229,356" style="outline:none;" target="_self"     />
-<area id="blog" alt="Blog" title="Blog" href="http://jonw27.github.io/blog" shape="rect" coords="226,280,377,355" style="outline:none;" target="_self"     />
-<area id="projects" alt="Projects" title="Projects" href="http://jonw27.github.io/projects" shape="rect" coords="374,280,582,355" style="outline:none;" target="_self"     />
-<area id="Portfolio" alt="Portfolio" title="Portfolio" href="http://jonw27.github.io/portfolio" shape="rect" coords="579,283,854,358" style="outline:none;" target="_self"     />
-<area id="Search" alt="Search" title="Search" href="http://jonw27.github.io/search" shape="rect" coords="869,305,1084,340" style="outline:none;" target="_self"     />
-<!--<area shape="rect" coords="1198,748,1200,750" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />-->
-</map>
+    </script><!--End Analytics-->
+<!--BEGIN BODY-->
+       <div id="container">
+        <a href="https://github.com/JonW27"><img id="octacat" src="Octocat.png" style="height:10%; width:10%; margin-left:35%; margin-top:43%;" /></a>       
+                   
+           <div id="footer" style="position:fixed; bottom:0; width:100%; height:10%; background:blue; top:200;"><footer style="position:absolute; bottom:0;"><div class="footer-recall"><p>&copy; Jonathan Wong</p></div></footer><footer style="position:absolute; bottom:0; left:180px;"><div class="footer-recall"><p>Let Octocat roam around! Made in Queens.</p></div></footer><footer style="position:absolute; bottom:0; left:560px;"><div class="footer-recall"><p><a href="blog.html">Blog</a>&nbsp;<a href="Projects.html">Projects</a>&nbsp;<a href="accoladeds.html">Accolades</a>&nbsp;<a href="Resume.html">Resume</a>&nbsp;</p></div></footer><footer style="position:absolute; bottom:0; left:860px;"><div class="footer-recall" id="specie"><p>Click me</p></div></footer></div>            
+        </div>
+       
+<!--END BODY-->        
 							<!--GA Script-->
 							              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
