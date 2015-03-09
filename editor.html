@@ -3,6 +3,15 @@
 <html>
 <head>
 <title>HTML editor</title>
+<style>
+         #editor { 
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom:50%;
+                  left: 0;
+          }         
+</style>
 <script type="text/javascript">
 
 var editboxHTML = 
@@ -15,10 +24,8 @@ var editboxHTML =
 '<\/style>' +
 '<\/head>' +
 '<body class="expand close" onload="document.f.ta.focus(); document.f.ta.select();">' +
-'<form class="expand close" name="f">' +
-'<textarea class="expand close" style="background: #def;" name="ta" wrap="hard" spellcheck="false">' +
-'<\/textarea>' +
-'<\/form>' +
+'<div id="editor" class="expand close" name="ta" wrap="hard" spellcheck="false">' +
+'<\/div>' +
 '<\/body>' +
 '<\/html>';
 
@@ -33,13 +40,13 @@ function init()
 {
   window.editbox.document.write(editboxHTML);
   window.editbox.document.close();
-  window.editbox.document.f.ta.value = defaultStuff;
+  window.editbox.document.ta.value = defaultStuff;
   update();
 }
 
 function update()
 {
-  var textarea = window.editbox.document.f.ta;
+  var textarea = window.editbox.document.ta;
   var d = dynamicframe.document; 
 
   if (old != textarea.value) {
@@ -61,5 +68,10 @@ function update()
   <frame name="editbox" src="javascript:'';">
   <frame name="dynamicframe" src="javascript:'';">
 </frameset>
-
+<script src="/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/html");
+</script>
 </html>
