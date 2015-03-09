@@ -1,77 +1,22 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HTML editor</title>
-<style>
-         #editor { 
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  bottom:50%;
-                  left: 0;
-          }         
+<title>TeX tut</title>
+<style type="text/css" media="screen">
+
 </style>
-<script type="text/javascript">
-
-var editboxHTML = 
-'<html class="expand close">' +
-'<head>' +
-'<style type="text/css">' +
-'.expand { width: 100%; height: 100%; }' +
-'.close { border: none; margin: 0px; padding: 0px; }' +
-'html,body { overflow: hidden; }' +
-'<\/style>' +
-'<\/head>' +
-'<body class="expand close" onload="document.ta.focus(); document.ta.select();">' +
-'<div id="editor" class="expand close" name="ta" wrap="hard" spellcheck="false">' +
-'<\/div>' +
-'<\/body>' +
-'<\/html>';
-
-var defaultStuff = '<h3>Type stuff here<\/h3>\n' +
-'<p>Hello World<\/p>';
-
-var credits = '<div style="position:absolute; margin:.3em; bottom:0em; right:0em;"><small>Created by Jonathan Wong</small><\/div>';
-
-var old = '';
-         
-function init()
-{
-  window.editbox.document.write(editboxHTML);
-  window.editbox.document.close();
-  window.editbox.document.ta.value = defaultStuff;
-  update();
-}
-
-function update()
-{
-  var textarea = window.editbox.document.ta;
-  var d = dynamicframe.document; 
-
-  if (old != textarea.value) {
-    old = textarea.value;
-    d.open();
-    d.write(old);
-    if (old.replace(/[\r\n]/g,'') == defaultStuff.replace(/[\r\n]/g,''))
-      d.write(credits);
-    d.close();
-  }
-
-  window.setTimeout(update, 150);
-}
-
+<script>
+    function init() {
+             
+    }     
 </script>
 </head>
+<body>
 
 <frameset resizable="yes" rows="50%,*" onload="init();">
-  <frame name="editbox" src="javascript:'';">
+  <!-- about:blank confuses opera, so use javascript: URLs instead -->
+  <frame name="editbox" src="TeXtut.html">
   <frame name="dynamicframe" src="javascript:'';">
 </frameset>
-<script src="/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    setTimeout(var editor = ace.edit("editor");, 3000);
-    editor.setTheme("ace/theme/monokai");
-    editor.getSession().setMode("ace/mode/html");
-</script>
+</body>
 </html>
