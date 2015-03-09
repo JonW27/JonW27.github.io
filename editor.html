@@ -70,7 +70,7 @@ function update()
 </frameset>
 <script src="/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
-    var editor = ace.edit("editor");
+    setTimeout(var editor = ace.edit("editor");, 3000);
     editor.setTheme("ace/theme/monokai");
     editor.getSession().setMode("ace/mode/html");
 </script>
