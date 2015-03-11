@@ -1,16 +1,60 @@
-<!--This code is copyrighted. © Jonathan Wong. All rights reserved.
--->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jonathan Wong | Personal Site</title>
+    <script src="//use.typekit.net/ktn3jbo.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <!-- Tangle -->
+    <script type="text/javascript" src="Tangle-0.1.0/Tangle.js"></script>
 
-<html>
-  <head>
-    <title>Thoughts</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("6136fa262465ed1153db02a8414f6e40");</script><!-- end Mixpanel -->
+    <!-- TangleKit -->
+    <link rel="stylesheet" href="Tangle-0.1.0/TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/TangleKit.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+ $("h1").fadeIn("slow"); 
+});
+</script>
+    <style>
+    div {
+     position:absolute;
+    top:50%;    
+    }
+    h1{
+     z-index: 1;   
+    text-align:center;
+    position: relative;
+    font-size:49px;    
+    }
+    h2 {
+     text-align:center;
+    position: relative;   
+    }
+    body {
+     background:url(background.png); /*ty to waterpipe.js and the rectangleworld people*/
+    image-size:cover;    
+    }
+    </style>
 </head>
-  <frameset rows="*">
-    <frame frameborder=0 src="http://thoughts-dyncontent.rhcloud.com" name="livepreviewcontent" scrolling="auto" noresize>
-  </frameset>
+<body>
+    <div>
+        <h1><b>Jonathan Wong</b><small><br>| Full stack Developer | TeX Fanatic | HTML Guru |</small></h1>
+        <h2 id="awesomenessFactor">He is <b class="TKAdjustableNumber" data-var="percentAWE" data-min="150">%</b> beyond the scope of awesomeness. Thats <span data-var="averagePerson" data-format="%.0f">&nbsp;times</span> greater than your average person.</h2></div>
+<script>
+    var tangle = new Tangle (document.getElementById("awesomenessFactor"), {
+    initialize: function () {
+        this.averagePerson = 10;
+        this.percentAWE = 150;
+    },
+    update: function () {
+        this.averagePerson = this.percentAWE / 10;
+    }
+});
+</script>    
+</body>    
 </html>
