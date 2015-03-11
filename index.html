@@ -23,7 +23,7 @@ $(document).ready(function(){
     <style>
     div {
      position:absolute;
-    top:50%;    
+    top:45%;    
     }
     h1{
      z-index: 1;   
@@ -35,13 +35,21 @@ $(document).ready(function(){
      text-align:center;
     position: relative;   
     }
+    @keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+    }
     body {
      background:url(background.png); /*ty to waterpipe.js and the rectangleworld people*/
     image-size:cover;
+    background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 40s linear infinite;
     }
     #transbox {
         background-color: #ffffff;
     }
+    
     </style>
 </head>
 <body>
