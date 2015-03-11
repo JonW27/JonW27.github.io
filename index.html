@@ -44,15 +44,15 @@ $(document).ready(function(){
 <body>
     <div>
         <h1><b>Jonathan Wong</b><small><br>| Full stack Developer | TeX Fanatic | HTML Guru |</small></h1>
-        <h2 id="awesomenessFactor">He is <b class="TKAdjustableNumber" data-var="percentAWE" data-min="150">%</b> beyond the scope of awesomeness. Thats <span data-var="averagePerson" data-format="%.0f">&nbsp;times</span> greater than your average person.</h2></div>
+        <h2 id="awesomenessFactor">He is <b class="TKAdjustableNumber" data-var="percentAWE" data-min="2">00%</b> beyond the scope of awesomeness. Thats <span data-var="averagePerson" data-format="%.0f">&nbsp;times</span> greater than your average person.</h2></div>
 <script>
     var tangle = new Tangle (document.getElementById("awesomenessFactor"), {
     initialize: function () {
         this.averagePerson = 10;
-        this.percentAWE = 150;
+        this.percentAWE = 2;
     },
     update: function () {
-        this.averagePerson = this.percentAWE / 10;
+        this.averagePerson = this.percentAWE *5;
     }
 });
 </script>    
