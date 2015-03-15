@@ -1,89 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Jonathan Wong | Personal Site</title>
-    <script src="//use.typekit.net/ktn3jbo.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <!-- Tangle -->
-    <script type="text/javascript" src="Tangle-0.1.0/Tangle.js"></script>
+<!--This code is copyrighted. © Jonathan Wong. All rights reserved.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
 
-    <!-- TangleKit -->
-    <link rel="stylesheet" href="Tangle-0.1.0/TangleKit/TangleKit.css" type="text/css">
-    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/mootools.js"></script>
-    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/sprintf.js"></script>
-    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/BVTouchable.js"></script>
-    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/TangleKit.js"></script>
-    <script src="processing.min.js"></script>
-    <style>
-    .transbox {
-     position:absolute;
-    top:45%;    
-    }
-    h1{
-     z-index: 1;   
-    text-align:center;
-    position: relative;
-    font-size:49px;    
-    }
-    h2 {
-     text-align:center;
-    position: relative;   
-    }
-    @-webkit-keyframes animatedBackground {
-    from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-}
-    @keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-    }
-    body {
-     background:url(background.png); /*ty to waterpipe.js and the rectangleworld people*/
-    image-size:cover;
-    background-position: 0px 0px;
-	background-repeat: repeat-x;
-	-webkit-animation: animatedBackground 30s linear infinite;
-	animation: animatedBackground 30s linear infinite;
-    }
-    .transbox {
-        background-color: #ffffff;
-    }
-    #particles-js {
-        position:absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    #foot {
-    	position:absolute;
-    	bottom:0;
-    	color:white;
-    	font-size:20;
-    }
-    </style>
+<html>
+  <head>
+    <title>Thoughts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("6136fa262465ed1153db02a8414f6e40");</script><!-- end Mixpanel -->
 </head>
-<body>
-<!--EXPLANATION: Keyframes css background is backup in case stripes fails to load. Ty to colorStripes. Its under the GNU. I do not own any copyright over it.-->
-    <canvas width="100%" height:"100%" data-processing-sources="colorStripes-master/colorStripes/colorStripes.pde"></canvas>
-    <div id="particles-js"><div class="transbox">
-        <h1><b>Jonathan Wong</b><small><br>| Full stack Developer | TeX Fanatic | HTML Guru |</small></h1>
-        <h2 id="awesomenessFactor">He is <b class="TKAdjustableNumber" data-var="percentAWE" data-min="2">00%</b> beyond the scope of awesomeness. Thats <span data-var="averagePerson" data-format="%.0f">&nbsp;times</span> greater than your average person.</h2></div></div>
-
-<footer><h2 id="foot"><small>Carefully crafted. Click <a href="sitemap.html">here</a> for sitemap, <a href="search.html">here</a> for site search, <a href="https://github.com/Jonw27">here</a> to view my Github account, and <a href="me.html">here</a> to learn more about me.</small></h2></footer>
-<script src="particles.js-master/particles.js"></script>
-<script src="particles.js-master/demo/js/app.js"></script>    
-<script>
-    var tangle = new Tangle (document.getElementById("awesomenessFactor"), {
-    initialize: function () {
-        this.averagePerson = 10;
-        this.percentAWE = 2;
-    },
-    update: function () {
-        this.averagePerson = this.percentAWE *5;
-    }
-});
-</script>
-</body>    
+  <frameset rows="*">
+    <frame frameborder=0 src="http://thoughts-dyncontent.rhcloud.com" name="livepreviewcontent" scrolling="auto" noresize>
+  </frameset>
 </html>
