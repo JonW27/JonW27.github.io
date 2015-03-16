@@ -5,6 +5,15 @@
       <title>Prototype</title>  
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <style>
+      #messagesDiv {
+        background: rgba(250, 250, 250, 0.8);
+        font-family:Helvetica;
+        font-weight:200;
+        line-width:200;
+        border-radius:15px;
+      }
+    </style>
   </head>
   <body>
     <div id='messagesDiv'></div>
@@ -25,7 +34,7 @@
         displayChatMessage(message.name, message.text);
       });
       function displayChatMessage(name, text) {
-        $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
+        $('<div/>').text(text).prepend($('<b/>').text(name+': ')).appendTo($('#messagesDiv'));
         $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
       };
     </script>
