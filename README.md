@@ -1,10 +1,6 @@
-Seuvend
+Its a blog
 ================
 
-My personal projects. Sorry for the lousy home template. I'll fix it up.
+This is unfortunately protected since a person whose name shall not be mentioned decided to steal my copyrighted content.
 
-This contains several things:
-1. My personal blog
-2. Rooter applescript application
-3. Some other random stuff
-
+<a href="http://www.dmca.com/Protection/Status.aspx?ID=8cf6bae8-30f8-466c-8734-42a6e65a0dea" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="http://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=8cf6bae8-30f8-466c-8734-42a6e65a0dea"  alt="DMCA.com Protection Status" /></a>  <script src="https://streamtest.github.io/badges/streamtest.js" type="text/javascript"></script> 
