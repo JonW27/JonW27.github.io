@@ -1,93 +1,58 @@
-<!--This code is copyrighted. © Jonathan Wong. All rights reserved.
--->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-
-<html>
-  <head>
-    <title>Jonathan Wong | Personal Site</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("6136fa262465ed1153db02a8414f6e40");</script><!-- end Mixpanel -->
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-  <style>
-  	html, body {
-  overflow-x: hidden;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>a</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/vivus/0.2.1/vivus.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<script>
+$(document).ready(function(){
+	new Vivus('log', {type: 'delayed', duration: 200}, fun());
+});
+function fun() {
+	$("h1").delay( 2400 ).fadeIn(3000);
+	$(".git").delay( 3200 ).fadeIn(3000);
+	setTimeout(function(){ $("#More").delay( 2400 ).fadeIn(3000); }, 3000);
+	
 }
-    h1 {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 200;
-      text-align:center;
-      margin-top:10%;
-    }
-    #nav a {
-    	padding:10px;
-    	left:80px;
-    	font-family: 'Oswald', sans-serif;
-    	font-size:22px;
-    	color:rgba(255,255,255,1);
-    }
-     #nav {
-   		  position:absolute;
-    	 top:0;
-    	 margin: 0 -9999rem;
-  /* add back negative margin value */
-  padding: 0.25rem 9999rem;
-  background: rgba(0, 0, 0, 0.8);
-  
-    }   
-    div {
-    	 margin: 0 -9999rem;
-  /* add back negative margin value */
-  padding: 0.25rem 9999rem;
-  background: rgba(0, 0, 0, 0.8);
-  
-    }
-    h2 {
-    	font-family: 'Raleway', sans-serif;
-    	text-align:center;
-    }
-    
-    #head a:link {
-    	color:rgba(255,255,255,0.9);
-	}
-
-	#head a:visited {
-    	color:rgba(255,255,255,0.9);
-	}
-	#head a:hover {
-    	color:rgba(255,255,255,1);
-	}
-	#head a:active {
-    	color:rgba(255,255,255,0.9);
-	}
-	#foot {
-		position: absolute; 
-bottom: 0;
-	}
-	p {
-		font-family: 'Raleway', sans-serif;
-		color:rgba(255,255,255,1);
-	}
-  </style>
+</script>
+<style>
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight:100;
+}
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+}
+a {
+	color:black;
+}
+a: hover {
+	color:gray;
+}
+#left {
+	width:300px;
+}
+</style>
 </head>
-  <body>
-    <br>
-    <div id="nav">
-    <a href="index.html">&lt;jonathanwong/&gt;</a>
-    <a href="http://thoughts-dyncontent.rhcloud.com">Blog</a>
-    <a href="https://github.com/JonW27/Swift_Projects">Swift Projects</a>
-    <a href="https://github.com/JonW27/Lua_Projects">Lua Projects</a>
-    <a href="otherprojects.html">Other Projects</a>
-    <a href="http://jonathan.developerportfolio.com">About</a>
-    </div>
-  <h1>
-    Jonathan Wong</h1>
-    <br>
-    <div id="head">
-    <div><h2><a href="https://github.com/Jonw27">Github</a></h2></div>
-    <div><h2><a href="labs.html">Labs</a></h2></div></div>
-    <div id="foot"><p>Created by Jonathan Wong. &copy; Jonathan Wong. Unless noted otherwise, all rights reserved.</p></div>
-  </body>
+<body id="cont">
+<div style="float:right;" id="right">
+<iframe src="http://thoughts-dyncontent.rhcloud.com" style="width:900px; height:650px; float:right;"></iframe>
+</div>
+<div id="left">
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" id="log">
+ <g>
+  <ellipse ry="83.000003" rx="87.5" id="svg_1" cy="209.000003" cx="106.5" stroke-width="5" stroke="#000000" fill="#000000"/>
+  <path d="m34,248c1,0 9.056866,0.573288 22,-1c18.114952,-2.201935 30.815178,-6.829605 47,-10c6.939186,-1.359299 13,-2 15,-2l1,0" id="svg_4" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000"/>
+  <path d="m121,199c0,3 4.548729,9.760529 10,23c4.456375,10.823166 9.628571,22.132446 13,31c2.706497,7.118622 4,11 4,12l1,1l0,1" id="svg_8" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="none"/>
+  <path d="m99,173c0,2 2.488655,5.834412 6,17c4.657166,14.809143 7.610107,28.126434 12,41c2.757584,8.086761 5,16 7,19l1,2" id="svg_9" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#f7efef" fill="none"/>
+  <path d="m127,252c0,-2 0,-7 0,-16c0,-8 1,-13 1,-17c0,-4 0,-6 0,-7c0,-1 0.11586,-2.963837 1,-6c1.152771,-3.958679 2.496231,-7.907791 3,-12c0.366547,-2.977524 2,-5 1,-5c-1,0 3.132538,8.944672 6,16c5.244263,12.903397 10.127762,27.339417 14,36c3.290771,7.360077 4.61731,10.076111 5,11c0.541199,1.306549 2,1 2,1c0,-1 1.990234,-5.790253 3,-13c1.248306,-8.912994 0,-15 0,-22c0,-6 0,-11 0,-19c0,-6 0,-10 0,-14c0,-1 0,-2 0,-3c0,-1 0,-2 0,-2c0,-1 0,-2 0,-3l0,-1l0,-1l0,-1" id="svg_10" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#f7efef" fill="none"/>
+  <path d="m56,239c1,1 2.878555,2.493469 6,3c1.974174,0.320374 5,1 9,1c3,0 5,0 7,0c2,0 4.54863,-3.769928 6,-8c1.654816,-4.823029 2,-10 2,-17c0,-4 0,-7 0,-10c0,-5 -1.475456,-9.861938 -3,-16c-1.466263,-5.903397 -2,-12 -3,-16l0,-2l0,-1" id="svg_11" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#f7efef" fill="none"/>
+ </g>
+</svg>
+<h1 style="display:none;">Jonathan Wong</h1>
+<h2><a href="https://github.com/Jonw27" class="git" style="display:none;">Github&nbsp;</a><a href="more.html" id="More" style="display:none;">&nbsp;More</a></h2></div>
+</body>
 </html>
