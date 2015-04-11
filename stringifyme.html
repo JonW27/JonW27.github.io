@@ -34,7 +34,7 @@ $(document).ready(function(){
 		callme();
 	}
 	else {
-		var output = output1.replace("<", "lt;");
+		var output = output1.replace("<", "&lt;");
 		callme2();
 		function callme2() {
 			if (output.indexOf("<") != -1) {
@@ -60,7 +60,7 @@ $(document).ready(function(){
 <button value="do">Convert</button>
 <p>Feeling lazy? Writing up a huge bunch of documentation on your HTML5 semantic code? Stringify ME! converts all your &lt; and &gt; tags to &amp;lt; and &amp;gt; entities to save you time.<br><br>
 Suddenly writing 4 characters becomes 1 character! Say you just have the standard HTML5 boilerplate tags- thats about 80 characters to type with entities &#8594; Now only 20 characters! <br><br>
-Easily show your website <a href="sourcecode.txt">source</a> code!
+Easily show your website <a href="sourcecode.txt">source</a> code!<br><br>Created by Jonathan Wong. All rights reserved.
 </p>
 </body>
 </html>
