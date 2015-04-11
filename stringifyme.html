@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Entity converter</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+<style>
+h1, h2 {
+	text-align:center;
+	font-family: Lato, sans-serif;
+	font-weight:300;
+}
+textarea {
+	width:47%;
+	height:300px;
+	resize: none;
+}
+p {
+	font-family: 'Muli', sans-serif;
+	font-weight:300;
+}
+</style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        var input = document.getElementById("input").value;
+        var output1 = input.replace(">", "&gt;");
+        callme();
+        function callme() {
+	if (output1.indexOf(">") != -1) {
+		output1 = output1.replace(">", "&gt;");
+		callme();
+	}
+	else {
+		var output = output1.replace("<", "lt;");
+		callme2();
+		function callme2() {
+			if (output.indexOf("<") != -1) {
+		output = output.replace("<", "&lt;");
+		callme2();
+	}
+		else {
+        document.getElementById("output").value = output;
+        alert("Converting Complete. :D");
+			}
+	}
+		}
+	}
+    });
+});
+</script>
+</head>
+<body>
+<h1>Stringify ME!</h1>
+<h2>Turn potentially vulnerable code into harmless entities in your HTML content strings</h2>
+<textarea id="input">Your Input!</textarea>
+<textarea id="output"></textarea><br>
+<button value="do">Convert</button>
+<p>Feeling lazy? Writing up a huge bunch of documentation on your HTML5 semantic code? Stringify ME! converts all your &lt; and &gt; tags to &amp;lt; and &amp;gt; entities to save you time.<br><br>
+Suddenly writing 4 characters becomes 1 character! Say you just have the standard HTML5 boilerplate tags- thats about 80 characters to type with entities &#8594; Now only 20 characters! 
+</p>
+</body>
+</html>
