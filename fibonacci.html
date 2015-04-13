@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--My failure when trying to complete the stuyctf challenge on fibonacci. Java might be better @ running. Program works tho. Till you start getting those infinities.-->
+<html lang="en">
+<head>
+<title>fibonacci algorithm</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	var previous = 0;
+    var number = 1 + previous;
+    console.log(previous);
+    console.log(number);
+    document.write("0<br>1<br>1<br>")
+    var output = number + previous;
+    fibonacci();
+    function fibonacci() {
+		if (output.toString().length == 500000) {
+			document.write(output);
+		}	
+		else {
+			if (number == 1){
+				var output2 = output;
+				output = output + number;
+				number = output2;
+			}
+			else {
+				output2 = output;
+				output = output + number;
+				number = output2;
+			}
+			document.write(output+"<br>");
+			fibonacci();
+		}
+}
+});
+//Pretty simple script, no?
+</script>
+</head>
+<body>
+<p>The fibonacci sequence.</p> 
+</body>
+</html>
