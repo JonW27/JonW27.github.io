@@ -49,16 +49,8 @@ $(document).ready(function() {
 				contentType: false,
 				success: function( data )
 				{
-					if( data.correct != 1 )
-					{
 						$( '#response' ).empty();
 						$( '#response' ).text( data.reply ).css( 'color', '#0e0' ).show();
-					}
-					else
-					{
-						$( '#response' ).empty();
-						$( '#response' ).text( data.reply ).css( 'color', 'red' ).show().fadeOut( 2000 );
-					}
 				}
 			});
 
