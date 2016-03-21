@@ -49,7 +49,7 @@ $(document).ready(function() {
 				contentType: false,
 				success: function( data )
 				{
-					if( data.correct == 0 )
+					if( data.correct != 1 )
 					{
 						$( '#response' ).empty();
 						$( '#response' ).text( data.reply ).css( 'color', '#0e0' ).show();
