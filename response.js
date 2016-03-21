@@ -5,39 +5,6 @@ $(document).ready(function() {
 		function()
 		{
 			var formData = new FormData();
-			formData.append( 'user', $( '[name="user"]' ).prop( 'value' ) );
-			formData.append( 'pass', $( '[name="pass"]' ).prop( 'value' ) );
-
-			$.ajax({
-				type: 'POST',
-				url: 'login.php',
-				data: formData,
-				dataType: 'JSON',
-				processData: false,
-				contentType: false,
-				success: function( data )
-				{
-					if( data.correct == 1 )
-					{
-						location.reload();
-					}
-					else
-					{
-						$( '#response' ).empty();
-						$( '#response' ).text( data.reply ).css( 'color', 'red' ).show().fadeOut( 2000 );
-					}
-				}
-			});
-
-			return false;
-		}
-	);
-
-	$( '#form2' ).submit
-	(
-		function()
-		{
-			var formData = new FormData();
 			formData.append( 'answer', $( '[name="password"]' ).prop( 'value' ) );
 
 			$.ajax({
