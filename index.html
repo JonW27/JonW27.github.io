@@ -105,8 +105,8 @@
                 var heads = document.getElementsByClassName('headContainer')[0];
                 var tails = document.getElementsByClassName('bodyContainer')[0];
                 if (heads.innerHTML == titles[0]) {
-                    heads.innerHTML = titles[2];
-                    tails.innerHTML = bodies[2];
+                    heads.innerHTML = titles[titles.length-1];
+                    tails.innerHTML = bodies[titles.length-1];
                     heads.dataset.num = "2";
                 }
                 else {
@@ -120,7 +120,7 @@
             function right() {
                 var heads = document.getElementsByClassName('headContainer')[0];
                 var tails = document.getElementsByClassName('bodyContainer')[0];
-                if (heads.innerHTML == titles[2]) {
+                if (heads.innerHTML == titles[titles.length-1]) {
                     heads.innerHTML = titles[0];
                     tails.innerHTML = bodies[0];
                     heads.dataset.num = "0";
