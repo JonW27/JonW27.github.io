@@ -51,14 +51,14 @@ var TitleScreen = React.createClass({
         this.setState({
           string: this.state.string + '0'
         });
-        var question = getQ(this.state.string);
-        var buttons = getB(this.state.string);
+        var question = getQ(this.state.string + '0');
+        var buttons = getB(this.state.string + '0');
         var thirdButton = false;
         var buttonThree = '';
         if (buttons.length == 3) {
             thirdButton = true;
         }
-        var text = getT(this.state.string);
+        var text = getT(this.state.string + '0');
         this.setState({
             question: question,
             buttonOne: buttons[0],
@@ -71,11 +71,41 @@ var TitleScreen = React.createClass({
         this.setState({
           string: this.state.string + '1'
         });
+        var question = getQ(this.state.string + '1');
+        var buttons = getB(this.state.string + '1');
+        var thirdButton = false;
+        var buttonThree = '';
+        if (buttons.length == 3) {
+            thirdButton = true;
+        }
+        var text = getT(this.state.string + '1');
+        this.setState({
+            question: question,
+            buttonOne: buttons[0],
+            buttonTwo: buttons[1],
+            showThree: thirdButton,
+            buttonThree: buttonThree
+        })
     },
     otherOption: function(){
         this.setState({
           string: this.state.string + '2'
         });
+        var question = getQ(this.state.string + '2');
+        var buttons = getB(this.state.string + '2');
+        var thirdButton = false;
+        var buttonThree = '';
+        if (buttons.length == 3) {
+            thirdButton = true;
+        }
+        var text = getT(this.state.string + '2');
+        this.setState({
+            question: question,
+            buttonOne: buttons[0],
+            buttonTwo: buttons[1],
+            showThree: thirdButton,
+            buttonThree: buttonThree
+        })
     },
     //convertHTML: function(){
     //    return {__html: this.state.options};
