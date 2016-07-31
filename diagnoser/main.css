@@ -1,0 +1,42 @@
+#top {
+    background: #303F9F;
+    height: 60px;
+    width: 100%;
+    width: 100vw;
+    margin: 0 auto;
+    float: left;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+#mount-point {
+    float: left;
+    width: 33%;
+    margin-left:33%;
+    text-align: center;
+    margin-top: 15px;
+    background: #3F51B5;
+    color: #FFFFFF;
+}
+body {
+    background: #3F51B5;
+}
+#mount-point h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18vw;
+    font-size: 58px;
+}
+#mount-point h2 {
+    font-family: 'Lato', sans-serif;
+}
+button {
+    background: #03A9F4;
+    border: 0;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 3vw;
+    margin-top: 10px;
+    color: #fff;
+}
+button:hover {
+    background: #303F9F;
+}

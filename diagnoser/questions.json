@@ -1,0 +1,113 @@
+{
+  "model": {
+    "0": {
+      "question": "What is your problem?",
+      "buttontext": [
+        "Printing Error",
+        "Login Error",
+        "Other Error"
+      ],
+      "text": ""
+    },
+    "00": {
+      "question": "When you scan your LAGCC ID, does anything show up?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "01": {
+      "question": "Are you a current student at LaGuardia?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "02": {
+      "question": "Does this have to do with the loading of an application?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "000": {
+      "question": "Does it show Denied for the print job?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "001": {
+      "question": "Does a message appear on your computer that says that your document has been held in a queue?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "010": {
+      "question": "Is your username in the following format: firstname.lastname?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "011": {
+      "question": "I'm Sorry.",
+      "buttontext": [
+        ""
+      ],
+      "text": "Unfortunately, you are not able to access the computers in the IT lab."
+    },
+    "020": {
+      "question": "I'm Sorry.",
+      "buttontext": [
+        ""
+      ],
+      "text": "Unfortunately, there is nothing I can do about that. The servers are just slow. You need to be patient."
+    },
+    "021": {
+      "question": "Does this have to do with the Wifi?",
+      "buttontext": [
+        ""
+      ],
+      "text": ""
+    },
+    "0000": {
+      "question": "When you hover over the Denied error, does it indicated over page limit?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "0001": {
+      "question": "You can print.",
+      "buttontext": [
+        ""
+      ],
+      "text": "Unfortunately I cannot help you if there is no denied error, but the print job is appearing at the scanner. Please print what you need to print."
+    },
+    "0010": {
+      "question": "When you click the windows start button, does it show your username?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "0011": {
+      "question": "Is the file saved onto the computer?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    }
+  }
+}

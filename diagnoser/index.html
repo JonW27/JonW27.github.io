@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>diagn0ser</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:300" rel="stylesheet">
+    <script src="https://fb.me/react-0.14.3.js"></script>
+    <script src="https://fb.me/react-dom-0.14.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        var url = "questions.json";
+
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                myArr = JSON.parse(xmlhttp.responseText);
+                console.log(myArr);
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    </script>
+</head>
+<body>
+<div id="top"></div>    
+<div id="mount-point">Loading... Please be patient...</div>
+<script type="text/babel">
+var TitleScreen = React.createClass({
+    getInitialState: function(){
+        return {
+            question: 'What is your problem?',
+            options: '<button type="button" onClick='+this.printOption+'>Printing error</button><button type="button" onClick='+this.loginOption+'>Login error</button><button type="button" onClick='+this.otherOption+'>Other error</button>'
+        }
+    },
+    convertHTML: function(){
+        return {__html: this.state.options};
+    },
+    printOption: function(){
+        this.setState({
+            question: 'When you scan your LAGCC ID, does anything show up?',
+            options: '<button type="button" onClick={this.printOpTwoA}>Yes</button><button type="button" onClick={this.printOpTwoB}No</button>'
+        });
+    },
+    render: function(){
+        return (
+            <div className='my-component'>
+                <h1>This is diagn0ser</h1>
+                <h2>{this.state.question}</h2> 
+                <div dangerouslySetInnerHTML={this.convertHTML()}>
+                </div>
+            </div>    
+        );
+    }
+});
+
+ReactDOM.render(
+    <TitleScreen/>,
+    document.getElementById('mount-point')
+);
+</script>
+<noscript>I do apologize, but this site does require javascript to run. Please enable javascript in your browser settings.</noscript>
+</body>
+</html>
