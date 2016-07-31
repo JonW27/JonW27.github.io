@@ -137,8 +137,10 @@ var TitleScreen = React.createClass({
                 <h2>{this.state.question}</h2>
                 <div>
                     {this.state.showButtons ?
-                    <button type="button" onClick={this.printOption}>{this.state.buttonOne}</button>
-                    <button type="button" onClick={this.loginOption}>{this.state.buttonTwo}</button> :
+                    <div>
+                        <button type="button" onClick={this.printOption}>{this.state.buttonOne}</button>
+                        <button type="button" onClick={this.loginOption}>{this.state.buttonTwo}</button>
+                    </div> :
                     null
                     }
                     {this.state.showThree ?
