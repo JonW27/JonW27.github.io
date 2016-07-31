@@ -53,7 +53,19 @@ var TitleScreen = React.createClass({
         });
         var question = getQ(this.state.string);
         var buttons = getB(this.state.string);
+        var thirdButton = false;
+        var buttonThree = '';
+        if (buttons.length == 3) {
+            thirdButton = true;
+        }
         var text = getT(this.state.string);
+        this.setState({
+            question: question,
+            buttonOne: buttons[0],
+            buttonTwo: buttons[1],
+            showThree: thirdButton,
+            buttonThree: buttonThree
+        })
     },
     loginOption: function(){
         this.setState({
