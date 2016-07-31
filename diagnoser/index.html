@@ -51,9 +51,9 @@ var TitleScreen = React.createClass({
         this.setState({
           string: this.state.string + '0'
         });
-        question = getQ(this.state.string);
-        buttons = getB(this.state.string);
-        text = getT(this.state.string);
+        var question = getQ(this.state.string);
+        var buttons = getB(this.state.string);
+        var text = getT(this.state.string);
     },
     loginOption: function(){
         this.setState({
