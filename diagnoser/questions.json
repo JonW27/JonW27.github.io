@@ -74,7 +74,8 @@
     "021": {
       "question": "Does this have to do with the Wifi?",
       "buttontext": [
-        ""
+        "Yes",
+        "No"
       ],
       "text": ""
     },
@@ -108,6 +109,43 @@
         "No"
       ],
       "text": ""
+    },
+    "0100": {
+      "question": "For your password, did you enter in your CUNY employer ID and your last two digits of your birthdate?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "0101": {
+      "question": "Please do that.",
+      "buttontext": [
+        ""
+      ],
+      "text": "If you continue to get errors, please refresh this page and start again."
+    },
+    "0210": {
+      "question": "I'm Sorry.",
+      "buttontext": [
+        ""
+      ],
+      "text": "Unfortunately, I can do nothing about that. You may head up to room 255 in E building and consult a technology department staff over there."
+    },
+    "0211": {
+      "question": "Do you want to open an application (such as Office)?",
+      "buttontext": [
+        "Yes",
+        "No"
+      ],
+      "text": ""
+    },
+    "00000": {
+      "question": "Its over the page limit.",
+      "buttontext": [
+        ""
+      ],
+      "text": "Unfortunately, its over the page limit. There are several ways you can avoid going over 15 pages."
     }
   }
 }

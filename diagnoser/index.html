@@ -127,9 +127,9 @@ var TitleScreen = React.createClass({
             text: text
         })
     },
-    //convertHTML: function(){
-    //    return {__html: this.state.options};
-    //},
+    convertHTML: function(){
+        return {__html: this.state.text};
+    },
     render: function(){
         return (
             <div className='my-component'>
@@ -147,7 +147,9 @@ var TitleScreen = React.createClass({
                     <button type="button" onClick={this.otherOption}>{this.state.buttonThree}</button> :
                     null
                     }
-                    {this.state.text}
+                    <div dangerouslySetInnerHTML={convertHTML()}>
+                        {this.state.text}
+                    </div>    
                 </div>
             </div>    
         );
