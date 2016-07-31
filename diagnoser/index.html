@@ -147,7 +147,7 @@ var TitleScreen = React.createClass({
                     <button type="button" onClick={this.otherOption}>{this.state.buttonThree}</button> :
                     null
                     }
-                    <div dangerouslySetInnerHTML={convertHTML()}>
+                    <div dangerouslySetInnerHTML={this.convertHTML()}>
                         {this.state.text}
                     </div>    
                 </div>
