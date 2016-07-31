@@ -134,7 +134,8 @@ var TitleScreen = React.createClass({
         return (
             <div className='my-component'>
                 <h1>This is diagn0ser</h1>
-                <h2>{this.state.question}</h2> 
+                <h2>{this.state.question}</h2>
+                <div>
                 {this.state.showButtons ?
                 <button type="button" onClick={this.printOption}>{this.state.buttonOne}</button><button type="button" onClick={this.loginOption}>{this.state.buttonTwo}</button> :
                 null
@@ -144,6 +145,7 @@ var TitleScreen = React.createClass({
                 null
                 }
                 {this.state.text}
+                </div>
             </div>    
         );
     }
