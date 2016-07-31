@@ -26,29 +26,58 @@
 <div id="top"></div>    
 <div id="mount-point">Loading... Please be patient...</div>
 <script type="text/babel">
+function getQ(string) {
+    return myArr['model'][string]['question'];
+}
+function getB(string) {
+    return myArr['model'][string]['buttontext'];
+}
+function getT(string) {
+    return myArr['model'][string]['text'];
+}
+
 var TitleScreen = React.createClass({
     getInitialState: function(){
         return {
+            string: '0',
             question: 'What is your problem?',
-            options: '<button type="button" onClick='+this.printOption+'>Printing error</button><button type="button" onClick='+this.loginOption+'>Login error</button><button type="button" onClick='+this.otherOption+'>Other error</button>'
+            buttonOne: 'Print Error',
+            buttonTwo: 'Login Error',
+            showThree: true,
+            buttonThree: 'Other Error'
         }
-    },
-    convertHTML: function(){
-        return {__html: this.state.options};
     },
     printOption: function(){
         this.setState({
-            question: 'When you scan your LAGCC ID, does anything show up?',
-            options: '<button type="button" onClick={this.printOpTwoA}>Yes</button><button type="button" onClick={this.printOpTwoB}No</button>'
+          string: this.state.string + '0'
+        });
+        question = getQ(this.state.string);
+        buttons = getB(this.state.string);
+        text = getT(this.state.string);
+    },
+    loginOption: function(){
+        this.setState({
+          string: this.state.string + '1'
         });
     },
+    otherOption: function(){
+        this.setState({
+          string: this.state.string + '2'
+        });
+    },
+    //convertHTML: function(){
+    //    return {__html: this.state.options};
+    //},
     render: function(){
         return (
             <div className='my-component'>
                 <h1>This is diagn0ser</h1>
                 <h2>{this.state.question}</h2> 
-                <div dangerouslySetInnerHTML={this.convertHTML()}>
-                </div>
+                <button type="button" onClick={this.printOption}>{this.state.buttonOne}</button><button type="button" onClick={this.loginOption}>{this.state.buttonTwo}</button>
+                {this.state.showThree ?
+                <button type="button" onClick={this.otherOption}>{this.state.buttonThree}</button> :
+                null
+                }
             </div>    
         );
     }
