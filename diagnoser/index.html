@@ -24,7 +24,7 @@
 </head>
 <body>
 <div id="top"></div>    
-<div id="mount-point">Loading... Please be patient...</div>
+<div id="mount-point">The loading of this page took too long. Please initiate a soft refresh.</div>
 <script type="text/babel">
 function getQ(string) {
     return myArr['model'][string]['question'];
@@ -44,7 +44,9 @@ var TitleScreen = React.createClass({
             buttonOne: 'Print Error',
             buttonTwo: 'Login Error',
             showThree: true,
-            buttonThree: 'Other Error'
+            showButtons: true,
+            buttonThree: 'Other Error',
+            text: ''
         }
     },
     printOption: function(){
@@ -54,17 +56,23 @@ var TitleScreen = React.createClass({
         var question = getQ(this.state.string + '0');
         var buttons = getB(this.state.string + '0');
         var thirdButton = false;
+        var showButtons = true;
         var buttonThree = '';
         if (buttons.length == 3) {
             thirdButton = true;
         }
         var text = getT(this.state.string + '0');
+        if (text != '') {
+            showButtons = false;
+        }
         this.setState({
             question: question,
             buttonOne: buttons[0],
             buttonTwo: buttons[1],
             showThree: thirdButton,
-            buttonThree: buttonThree
+            showButtons: showButtons,
+            buttonThree: buttonThree,
+            text: text
         })
     },
     loginOption: function(){
@@ -75,16 +83,22 @@ var TitleScreen = React.createClass({
         var buttons = getB(this.state.string + '1');
         var thirdButton = false;
         var buttonThree = '';
+        var showButtons = true;
         if (buttons.length == 3) {
             thirdButton = true;
         }
         var text = getT(this.state.string + '1');
+        if (text != '') {
+            showButtons = false;
+        }
         this.setState({
             question: question,
             buttonOne: buttons[0],
             buttonTwo: buttons[1],
             showThree: thirdButton,
-            buttonThree: buttonThree
+            showButtons: showButtons,
+            buttonThree: buttonThree,
+            text: text
         })
     },
     otherOption: function(){
@@ -95,16 +109,22 @@ var TitleScreen = React.createClass({
         var buttons = getB(this.state.string + '2');
         var thirdButton = false;
         var buttonThree = '';
+        var showButtons = true;
         if (buttons.length == 3) {
             thirdButton = true;
         }
         var text = getT(this.state.string + '2');
+        if (text != '') {
+            showButtons = false;
+        }
         this.setState({
             question: question,
             buttonOne: buttons[0],
             buttonTwo: buttons[1],
             showThree: thirdButton,
-            buttonThree: buttonThree
+            showButtons: showButtons,
+            buttonThree: buttonThree,
+            text: text
         })
     },
     //convertHTML: function(){
@@ -115,11 +135,15 @@ var TitleScreen = React.createClass({
             <div className='my-component'>
                 <h1>This is diagn0ser</h1>
                 <h2>{this.state.question}</h2> 
-                <button type="button" onClick={this.printOption}>{this.state.buttonOne}</button><button type="button" onClick={this.loginOption}>{this.state.buttonTwo}</button>
+                {this.state.showButtons ?
+                <button type="button" onClick={this.printOption}>{this.state.buttonOne}</button><button type="button" onClick={this.loginOption}>{this.state.buttonTwo}</button> :
+                null
+                }
                 {this.state.showThree ?
                 <button type="button" onClick={this.otherOption}>{this.state.buttonThree}</button> :
                 null
                 }
+                {this.state.text}
             </div>    
         );
     }
