@@ -79,7 +79,7 @@
       "text": ""
     },
     "0000": {
-      "question": "When you hover over the Denied error, does it indicated over page limit?",
+      "question": "When you hover over the Denied error, does it indicate that your print job is over the page limit?",
       "buttontext": [
         "Yes",
         "No"
