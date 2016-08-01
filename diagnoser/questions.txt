@@ -75,4 +75,39 @@ model
     question = Its over the page limit.
     buttontext[] s =
     text = Unfortunately, its over the page limit. There are several ways you can avoid going over 15 pages.
-    
+  00001
+    question = Does it indicate that it was a duplicate?
+    buttontext[] s = Yes, No
+    text = 
+  00100
+    question = Is the file saved onto the computer?
+    buttontext[] s = Yes, No
+    text = 
+  00101
+    question = Thats why.
+    buttontext[] s =
+    text = Please sign out of the account that you are in and sign in to your own account. If you continue to experience problems, please soft refresh this page and start over again.
+  00110
+    question = When you click the windows start button, does it show your username?
+    buttontext[] s = Yes, No
+    text =
+  00111
+    question = Please do that.
+    buttontext[] s =
+    text = If you continue to experience problems, please soft refresh this page and start over again.
+  01000
+    question = Check the CUNY Registry.
+    buttontext[] s =
+    text = Please make sure that you have typed in the correct Employer ID; you may double-check by visiting the CUNY Registry page. Other than that I cannot help you.
+  01001
+    question = Please do that.
+    buttontext[] s =
+    text = If you forgot your password, you may check the CUNY registry. You may ask a staffer to check it for you.
+  02110
+    question = Here's how.
+    buttontext[] s =
+    text = Here are some accompanying images to demonstrate how to access a select number of applications.
+  02111
+    question = Your question must be unique.
+    buttontext[] s =
+    text = Go to a staffer (IT personnel) and ask them. 
