@@ -110,4 +110,44 @@ model
   02111
     question = Your question must be unique.
     buttontext[] s =
-    text = Go to a staffer (IT personnel) and ask them. 
+    text = Go to a staffer (IT personnel) and ask them.
+  000010
+    question = Thats why.
+    buttontext[] s =
+    text = LaGuardia does not like wasting paper. Please rename the file via Save As and print again.
+  000011
+    question = Does it indicate that you are out of credits?
+    buttontext[] s = Yes, No
+    text =
+  001000
+    question = Is the file a Maple file?
+    buttontext[] s = Yes, No
+    text =
+  001001
+    question = Please do that.
+    buttontext[] s =
+    text = If you continue to experience problems, please soft refresh this page and begin again.
+  001100
+    question = Your problem must be unique.
+    buttontext[] s =
+    text = Please consult an IT staffer.
+  001101
+    question = Please sign out of the account.
+    buttontext[] s = 
+    text = You may then sign into yours. Understandably, if you're in another person's account, your print job is registered to them, so when you scan your ID card, it will not show your print job.
+  0000110
+    question = Thats why.
+    buttontext[] s =
+    text = You may go to Room 110 to replenish your credits.
+  0000111
+    question = Your question must be unique.
+    buttontext[] s =
+    text = Please consult an IT staffer.
+  001000
+    question = Thats why.
+    buttontext[] s =
+    text = Instead of hitting the print button, you should instead press the export as option. When the window pops up, you may have to drag the window for it to be fully visible. Once that is completed, you may now continue to name your file, and under the file type option select PDF. Upon doing that, click File Explorer, and navigate to your file, which needs to be saved onto the computer. Having done that, open up Google Chrome and drag the file in question to the Google Chrome URL bar. Your file as a PDF should now be visible. Hit Control+P to show the print dialog box and select your options.
+  001000
+    question = Your question must be unique.
+    buttontext[] s =
+    text = Please consult an IT staffer.
