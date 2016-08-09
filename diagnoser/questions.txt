@@ -128,9 +128,9 @@ model
     buttontext[] s =
     text = If you continue to experience problems, please soft refresh this page and begin again.
   001100
-    question = Your problem must be unique.
-    buttontext[] s =
-    text = Please consult an IT staffer.
+    question = Is your file a Maple file?
+    buttontext[] s = Yes, No
+    text =
   001101
     question = Please sign out of the account.
     buttontext[] s = 
@@ -148,6 +148,14 @@ model
     buttontext[] s =
     text = Instead of hitting the print button, you should instead press the export as option. <img src="images/maple_export_menu.PNG" /> When the window pops up, you may have to drag the window for it to be fully visible. Once that is completed, you may now continue to name your file, and under the file type option select PDF. Upon doing that, click File Explorer, and navigate to your file, which needs to be saved onto the computer. Having done that, open up Google Chrome and drag the file in question to the Google Chrome URL bar. Your file as a PDF should now be visible. Hit Control+P to show the print dialog box and select your options.
   0010001
+    question = Your question must be unique.
+    buttontext[] s =
+    text = Please consult an IT staffer.
+  0011000
+    question = That's why.
+    buttontext[] s =
+    text = Instead of hitting the print button, you should instead press the export as option. <img src="images/maple_export_menu.PNG" /> When the window pops up, you may have to drag the window for it to be fully visible. Once that is completed, you may now continue to name your file, and under the file type option select PDF. Upon doing that, click File Explorer, and navigate to your file, which needs to be saved onto the computer. Having done that, open up Google Chrome and drag the file in question to the Google Chrome URL bar. Your file as a PDF should now be visible. Hit Control+P to show the print dialog box and select your options.
+  0011001
     question = Your question must be unique.
     buttontext[] s =
     text = Please consult an IT staffer.
