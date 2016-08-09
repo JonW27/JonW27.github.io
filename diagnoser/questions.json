@@ -276,7 +276,7 @@
       "buttontext": [
         ""
       ],
-      "text": "Instead of hitting the print button, you should instead press the export as option. When the window pops up, you may have to drag the window for it to be fully visible. Once that is completed, you may now continue to name your file, and under the file type option select PDF. Upon doing that, click File Explorer, and navigate to your file, which needs to be saved onto the computer. Having done that, open up Google Chrome and drag the file in question to the Google Chrome URL bar. Your file as a PDF should now be visible. Hit Control+P to show the print dialog box and select your options."
+      "text": "Instead of hitting the print button, you should instead press the export as option. <img src=\"images/maple_export_menu.PNG\" /> When the window pops up, you may have to drag the window for it to be fully visible. Once that is completed, you may now continue to name your file, and under the file type option select PDF. Upon doing that, click File Explorer, and navigate to your file, which needs to be saved onto the computer. Having done that, open up Google Chrome and drag the file in question to the Google Chrome URL bar. Your file as a PDF should now be visible. Hit Control+P to show the print dialog box and select your options."
     },
     "0010001": {
       "question": "Your question must be unique.",
