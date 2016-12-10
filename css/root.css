@@ -1,0 +1,43 @@
+@font-face {
+  font-family: john;
+  src: url("../fonts/BIG JOHN.otf");
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-family: john, serif;
+  margin-top: 20vw;
+}
+h2 {
+  font-family: "Cutive Mono", monospace;
+  color: #fff;
+  text-decoration: overline;
+}
+.emp {
+  font-size: 12vw;
+}
+.preface {
+  height: 70vw;
+  background: url("../imgs/kale-salad.jpg");
+}
+.leadArrow {
+  margin-left: 45vw;
+}
+.term {
+  background: rgba(0,0,0,0.8);
+  padding-top: 5vw;
+}
+.term > p {
+  font-family: monospace;
+  color: #fff;
+  margin-left: 5vw;
+  font-size: 2vw;
+}
+.specHeader {
+  color: #000;
+}
+.contact {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
