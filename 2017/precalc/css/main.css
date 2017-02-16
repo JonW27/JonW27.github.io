@@ -1,0 +1,38 @@
+@font-face{
+    font-family: "Slim Joe";
+    src: url('../res/Slim Joe.otf');
+}
+body{
+    font-family: Inconsolata, monospace;
+    margin: 0 auto;
+}
+.subject-heading{
+    background: #43C6AC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #43C6AC , #F8FFAE); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #43C6AC , #F8FFAE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1{
+    font-family:'Slim Joe', serif;
+    text-align:center;
+    padding: 5vw;
+    font-weight: bold;
+    font-size: 5vw;
+}
+.EULA {
+    font-size: 1.8vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+hr{
+    border:none;
+    height: 2vw;
+    background: chartreuse;
+}
+.contents {
+    font-size: 1.8vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+h2{
+    text-align:center;
+}

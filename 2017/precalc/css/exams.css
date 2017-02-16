@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "Slim Joe";
+    src: url('../res/Slim Joe.otf');
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+h1{
+    font-family: "Slim Joe", sans-serif;
+    text-align:center;
+    padding: 10vw;
+}
