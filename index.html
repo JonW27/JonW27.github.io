@@ -28,11 +28,13 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
+        <!--The best people know how to sell themselves to others. (READ: LOOKING FOR AN INTERNSHIP) -->
         <div class="container-fluid">
             <div class="preface row">
                 <div class="row pref-first">
                     <div class="col-md-12">
-                        <h1 class='text-center'>Boundaries were meant to be <br><span class="emp">broken</span></h1>
+                        <canvas id="testCanvas"></canvas>
+                        <h1 class='text-center banner'>Boundaries were meant to be <br><span class="emp">broken</span></h1>
                     </div>
                 </div>
                 <div class="row">
@@ -64,7 +66,7 @@
                         <br>
                         breakboundaries$ cat .DS_Store
                         <br>
-                        <mark>About Jonathan:<br>I love to experiment. Right now, I'm not sure what field I want to go into, but I'm currently looking into Computer Security, Data Science, and Machine Learning. As of now, I'm working on maintaining and improving <a href="https://github.com/ex0dus-0x/dedsploit">dedsploit</a>, messing with R, and looking at how to work with Keras.</mark>
+                        <mark>About Jonathan:<br>My main hobbies are programming, surfing the net, rooting for the Yankees, thinking (philosophy + introspection), complaining about the lack of efficiency and high cost of modern US transportation systems, and watching standup comedy. I like to think outside of the box. Nothing should be assumed off-limits and this can be reflected in the way I approach problems, whether they be algorithmically or CTF/wargame style. As for baseball, I like to root for the team despite not really watching games. Data science has made a real advent into MLB, and it has forever changed the game (something I'm interested in). As for transportation systems, I feel like an artificial intelligence system can be devised so that things like express train stops with little to no turnstyle change are the things of the past (speaking from experience).</mark>
                         <br>
                         breakboundaries$ cat /etc/passwd
                         <br>
@@ -78,7 +80,8 @@
                         <br>
                         breakboundaries$ cat tempfile
                         <br>
-                        <mark>More about Jonathan:<br>I'm a high schooler currently attending Stuyvesant, located in Manhattan, NYC. I've attended 11 hackathons so far, and have generally learned more as I go. You can view more on this <a href="whyhackathons.html">here</a>.</mark>
+                        <mark>More about Jonathan:<br>I'm a high school junior currently attending <a href="https://en.wikipedia.org/wiki/Stuyvesant_High_School#Public_recognition">Stuyvesant</a>, located in Manhattan, NYC. I consider myself to be a fairly frequent hackathon attender in my demographic group, and believe that these events are the tech networking events of the future. You can read more about that <a href="whyhackathons.html">here</a>.<br>As for technology I use: I primarily code in python, and if not, will probably rely on some sort of javascript and frontend amalgamation. I've done some work with java and scheme and a little work with haskell, R, and C.
+                        </mark>
                         <br>
                         breakboundaries$ sudo su -
                         <br>
@@ -132,6 +135,7 @@
                             <li>CSTUY</li>
                             <li>Space Apps Nextgen</li>
                             <li>LIHacks</li>
+                            <li>HackNYU</li>
                         </ul>
                     </div>
                 </div>
@@ -139,13 +143,99 @@
             <div class="row contact">
                 <div class="col-md-12">
                     <h2>Contact:</h2>
-                    <p>jonathan@haxsource.com<br>
+                    <p><script>document.write(String.fromCharCode(83, 69, 85, 86, 69, 78, 68, 64, 71, 77, 65, 73, 76, 46, 67, 79, 77).toLowerCase());</script><br>
                     @Jonw27
                     <a href="https://github.com/Jonw27"><i class="fa fa-github" aria-hidden="true"></i></a>
                     </p>    
                 </div>
             </div>
         </div>
+        <script src="js/proton-2.1.0.min.js"></script>
+            <script>
+			var proton;
+			var renderer;
+			var emitter1, emitter2;
+			var stats;
+			var canvas;
+			var attractionBehaviours = [];
+			var R = 150;
+			var tha = 0;
+			var mouseObj;
+			
+			Main();
+			function Main() {
+				canvas = document.getElementById("testCanvas");
+				canvas.width = 1120;
+				canvas.height = 610;
+
+				createProton();
+				tick();
+				canvas.addEventListener('mousedown', mousedownHandler, false);
+				canvas.addEventListener('mouseup', mouseupHandler, false);
+			}
+
+			function createProton() {
+				mouseObj = {
+					x : 1120 / 2,
+					y : 610 / 2
+				};
+				proton = new Proton;
+				emitter1 = createImageEmitter(canvas.width / 2 + R, canvas.height / 2, '#4F1500', '#0029FF');
+				emitter2 = createImageEmitter(canvas.width / 2 - R, canvas.height / 2, '#004CFE', '#6600FF');
+
+				renderer = new Proton.Renderer('webgl', proton, canvas);
+				renderer.blendFunc("SRC_ALPHA", "ONE");
+				renderer.start();
+			}
+
+			function createImageEmitter(x, y, color1, color2) {
+				var emitter = new Proton.Emitter();
+				emitter.rate = new Proton.Rate(new Proton.Span(5, 7), new Proton.Span(.01, .02));
+				emitter.addInitialize(new Proton.Mass(1));
+				emitter.addInitialize(new Proton.Life(1));
+				emitter.addInitialize(new Proton.ImageTarget(['imgs/particle.png'], 32));
+				emitter.addInitialize(new Proton.Radius(40));
+				emitter.addBehaviour(new Proton.Alpha(1, 0));
+				emitter.addBehaviour(new Proton.Color(color1, color2));
+				emitter.addBehaviour(new Proton.Scale(3.5, 0.1));
+				emitter.addBehaviour(new Proton.CrossZone(new Proton.RectZone(0, 0, 1003, 610), 'dead'));
+				var attractionBehaviour = new Proton.Attraction(mouseObj, 0, 0);
+				attractionBehaviours.push(attractionBehaviour);
+				emitter.addBehaviour(attractionBehaviour);
+
+				emitter.p.x = x;
+				emitter.p.y = y;
+				emitter.emit();
+				proton.addEmitter(emitter);
+				return emitter;
+			}
+
+			function emitterRun() {
+				emitter1.p.x = canvas.width / 2 + R * Math.sin(Math.PI / 2 + tha);
+				emitter1.p.y = canvas.height / 2 + R * Math.cos(Math.PI / 2 + tha);
+				emitter2.p.x = canvas.width / 2 + R * Math.sin(-Math.PI / 2 + tha);
+				emitter2.p.y = canvas.height / 2 + R * Math.cos(-Math.PI / 2 + tha);
+				tha += .1;
+			}
+
+			function mousedownHandler(e) {
+				for (var i = 0; i < 2; i++)
+					attractionBehaviours[i].reset(mouseObj, 120, 200);
+			}
+
+			function mouseupHandler(e) {
+				setTimeout(function() {
+					for (var i = 0; i < 2; i++)
+						attractionBehaviours[i].reset(mouseObj, 0, 0);
+				}, 1000);
+			}
+
+			function tick() {
+				requestAnimationFrame(tick);
+				emitterRun();
+				proton.update();
+			}
+		</script>
         <script src="https://use.fontawesome.com/040338bb70.js"></script>
     </body>
 </html>

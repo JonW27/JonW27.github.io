@@ -19,7 +19,7 @@ h2 {
 }
 .preface {
   height: 70vw;
-  background: url("../imgs/kale-salad.jpg");
+  background: url("https://static.pexels.com/photos/27986/pexels-photo-27986.jpg");
 }
 .leadArrow {
   margin-left: 45vw;
@@ -40,4 +40,22 @@ h2 {
 .contact {
   background: rgba(0,0,0,0.8);
   color: #fff;
+}
+canvas {
+    position: absolute;
+}
+.banner {
+    z-index:1000;
+    animation: fader 10s;
+    color: #fff;
+}
+@-webkit-keyframes fader {
+    0%   {color:#000;}
+    100% {color:#fff;}
+}
+
+/* Standard syntax */
+@keyframes fader {
+    0%   {color:#000;}
+    100% {color:#fff;}
 }
