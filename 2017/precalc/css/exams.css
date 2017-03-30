@@ -4,6 +4,10 @@
 }
 body{
     font-family: 'PT Sans', sans-serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+    margin-bottom: 10vw;
 }
 h1{
     font-family: "Slim Joe", sans-serif;
