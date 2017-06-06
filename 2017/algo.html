@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algo Explainer</title>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+        <style>
+            body{
+                background: rgb(90,200,250);
+                color: rgb(38,38,38);
+            }
+            body::-webkit-scrollbar{
+                width:1vw;
+            }
+            body::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            }
+
+            body::-webkit-scrollbar-thumb {
+              background-color: darkgrey;
+              outline: 1px solid slategrey;
+            }
+            h1,h2{
+                font-family: 'Playfair Display', serif;
+                text-decoration: overline;
+            }
+            h1{
+                text-align: center;
+                font-size: 8vw;
+                font-family:'PT Mono',monospace;
+            }
+            h2{
+                font-size: 3vw;
+                background:rgb(255,149,0);
+                max-width: 12vw;
+                border-radius: 2vw;
+                padding-left: 2vw;
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+            }
+            .important{
+                color:rgba(255,250,250,1);
+            }
+            .yellow{
+                background: rgb(255,204,0);
+            }
+            .red{
+                background: rgb(255,59,48);
+            }
+            .blue{
+                background: rgb(0,122,255);
+            }
+            .purple{
+                background: rgb(88,86,214);
+            }
+            .pink{
+                background: rgb(255,45,85);
+            }
+            .green{
+                background: rgb(76,217,100);
+            }
+            img{
+                margin-left: 25%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Algo</h1>
+        <h2>Stacks</h2>
+        <p>A stack is a data structure that operates on a <span class="important yellow">LIFO</span> basis. LIFO stands for last in, first out. Much like what it is named for, a stack is akin to a stack. When you stack a tower of blocks, the top block (the last block) is the easiest to take off, with the <span class="important blue">least layer of abstraction</span>. An example of a stack is the java function calling itself. When you make a recursive call and it nevers end, you get a stackoverflow error, because you literally overflowed their data structure.</p>
+        <img src="cs/imgs/Stacks.png" />
+        <h2>Queues</h2>
+        <p>Again much like its namesake, a queue is <span class="important red">FIFO</span>. If you have a line at say an airport, the one that should go first should be the one who was on line first. The first one on line is thus the first one who gets off the line (barring someone else rage-quitting). Queues are where things get interesting because you can have a queue that is <span class="important purple">simply linked</span>. A person does <b>not</b> necessarily need to know what place they're in, they only need to know who the person in front of them is and who the person behind them is. This allows queues to take advantage of LinkedLists and all the goodies such as circular stuff that come along with them.</p>
+        <h2>Trees</h2>
+        <p>Suppose we wanted to do something such as sorting, searching, or some sort of recursive action. What would work well? Trees! Trees allow us to traverse the tree in log(n) time due to the nature of the tree being 2^whatever. An example of a tree for searching is a binary search tree. In ExpressionTree, the Tree was useful because it allowed us to perform multiple repetitive actions with operators in log(n) time.</p>
+        <h2>Heaps</h2>
+        <p>Suppose we took a tree and decided that the order ultimately did not matter to us as long as we knew the top one and the last one and the subjects abided in a general order. Such a data structure is called a heap.</p>
+    </body>
+</html>

@@ -1,243 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Jonathan Wong</title>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/root.css">
-        <link rel="stylesheet" href="css/overlay.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" sizes="57x57" href="res/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="res/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="res/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="res/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="res/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="res/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="res/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="res/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="res/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="res/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="res/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png">
-        <link rel="manifest" href="res/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="res/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <title>Jonathan Wong.</title>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <script>
+            function minimal(dom){
+                document.getElementById("content").innerHTML=`
+                    <p><span id="primary">Hey.</span> I'm Jonathan.</p>
+    <p>I'm a self-professed software engineer.</p>
+    <p>You can find some of my work on <a href="https://github.com/Jonw27">github</a> and <a href="https://jonathan.devport.co">devport</a>.</p>    
+    <p>I'm also a high school student.</p>    
+        <p>Do you want to chat? <a href="mailto:seuvend@gmail.com">Email</a></p> 
+`;
+            dom.style.color = "white";
+            dom.style.background = "black";
+            }
+            function reasonable(){
+                document.getElementById("content").innerHTML=`
+                    <p><span id="primary">Hey.</span> My name is Jonathan Wong.</p>
+    <p>I'm a self-professed software engineer who primarily works with python, java, and javascript.</p>
+    <p>You can find some of my work on <a href="https://github.com/Jonw27">github</a> and <a href="https://jonathan.devport.co">devport</a>.</p>    
+    <p>I'm also a high school student who attends <a href="https://en.wikipedia.org/wiki/Stuyvesant_High_School">Stuyvesant</a>.</p>
+        <p>I'm looking for work. Here's my <a href="resume.pdf">resume</a>.</p>
+        <p>Do you want to chat? <a href="mailto:seuvend@gmail.com">Email</a></p> 
+`;
+            }
+            function lengthy(){
+                document.getElementById("content").innerHTML=`
+                    <p><span id="primary">Hey.</span> My name is Jonathan Wong.</p>
+    <p>I'm a self-professed software engineer who primarily works with python, java, and javascript. I also attend many hackathons; my current count is 16.</p>
+    <p>You can find some of my work on <a href="https://github.com/Jonw27">github</a> and <a href="https://jonathan.devport.co">devport</a>.</p>    
+    <p>I'm also a high school student who attends <a href="https://en.wikipedia.org/wiki/Stuyvesant_High_School">Stuyvesant</a>.</p>
+        <p>I'm looking for work. Here's my <a href="resume.pdf">resume</a>.</p>
+        <p>I have a bunch of hobbies– these include mutual soccer, pentesting, watching standup comedy, and reading blog posts.
+        <p>Do you want to chat? <a href="mailto:seuvend@gmail.com">Email</a></p> 
+`;
+            }
+            function teenage(){
+                document.getElementById("content").innerHTML=`
+                    <p><span id="primary">Yo.</span> My name's Jonathan Wong.</p>
+    <p>I'm a software engineer who works with a large set of technologies. You may have seen me before, at any of the 16 hackathons I attended in the NY-tristate area.</p>
+    <p>I push code regularly, culminating in several projects that I put on <a href="https://github.com/Jonw27">github</a> and <a href="https://jonathan.devport.co">devport</a>.</p>    
+    <p>I'm a high school student at <a href="https://en.wikipedia.org/wiki/Stuyvesant_High_School">Stuyvesant</a>, one of the *top* ranked schools in the nation. Since I'm just a ween teen, I guess I'll have to prove that I'm for realz. Stuy's APCS course is AB and basically is all the coding entry-level interview stuff like stacks, trees, and heaps.</p>
+        <p>I'm looking for work, like every other kid out there. Here's my <a href="resume.pdf">resume</a>.</p>
+        <p>I have a bunch of hobbies– these include mutual soccer, pentesting, watching standup comedy, and reading blog posts.
+        <p>Let's chat. <a href="mailto:seuvend@gmail.com">Email</a></p> 
+`;
+            }
+        </script>
     </head>
     <body>
-        <!--The best people know how to sell themselves to others. (READ: LOOKING FOR AN INTERNSHIP) -->
-        <div class="container-fluid">
-            <div class="preface row">
-                <div class="row pref-first">
-                    <div class="col-md-12">
-                        <canvas id="testCanvas"></canvas>
-                        <h1 class='text-center banner'>Boundaries were meant to be <br><span class="emp">broken</span></h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <h2 class="text-center">Jonathan Wong</h2>
-                    </div>
-                </div>
-                <div class="row lead">
-                    <div class="col-md-4 leadArrow">
-                        <a href="#whoami">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
-                                <path d="M7 10l5 5 5-5z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="intro row" id="whoami">
-                <div class="row">
-                    <div class="col-md-12 term">
-                        <p>breakboundaries$ whoami
-                        <br>
-                        <mark>jonathanwong</mark>
-                        <br>
-                        breakboundaries$ ls -la
-                        <br>
-                        -rw-r--r--     1 jonathanwong  staff        27 Sep 22 02:08 .DS_Store
-                        <br>
-                        breakboundaries$ cat .DS_Store
-                        <br>
-                        <mark>About Jonathan:<br>My main hobbies are programming, surfing the net, rooting for the Yankees, thinking (philosophy + introspection), complaining about the lack of efficiency and high cost of modern US transportation systems, and watching standup comedy. I like to think outside of the box. Nothing should be assumed off-limits and this can be reflected in the way I approach problems, whether they be algorithmically or CTF/wargame style. As for baseball, I like to root for the team despite not really watching games. Data science has made a real advent into MLB, and it has forever changed the game (something I'm interested in). As for transportation systems, I feel like an artificial intelligence system can be devised so that things like express train stops with little to no turnstyle change are the things of the past (speaking from experience).</mark>
-                        <br>
-                        breakboundaries$ cat /etc/passwd
-                        <br>
-                        root:alpine:0:0:System Administrator:/var/root:/bin/sh
-                        <br>
-                        breakboundaries$ cd /tmp
-                        <br>
-                        breakboundaries$ ls -la
-                        <br>
-                        -rw-r--r--     1 jonathanwong  staff        27 Sep 22 02:18 tempfile
-                        <br>
-                        breakboundaries$ cat tempfile
-                        <br>
-                        <mark>More about Jonathan:<br>I'm a high school junior currently attending <a href="https://en.wikipedia.org/wiki/Stuyvesant_High_School#Public_recognition">Stuyvesant</a>, located in Manhattan, NYC. I consider myself to be a fairly frequent hackathon attender in my demographic group, and believe that these events are the tech networking events of the future. You can read more about that <a href="whyhackathons.html">here</a>.<br>As for technology I use: I primarily code in python, and if not, will probably rely on some sort of javascript and frontend amalgamation. I've done some work with java and scheme and a little work with haskell, R, and C.
-                        </mark>
-                        <br>
-                        breakboundaries$ sudo su -
-                        <br>
-                        Password:    
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row projects">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center specHeader">Things I've built:</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-sm-offset-1">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="imgs/labob.jpg" />
-                            <div class="overlay">
-                               <h2>Labob</h2>
-                               <a class="info" href="https://github.com/Jonw27/labob">REPO</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-sm-offset-2">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="imgs/dedsploit.jpg" />
-                            <div class="overlay">
-                               <h2>dedsploit</h2>
-                               <a class="info" href="https://github.com/ex0dus-0x/dedsploit">REPO</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row hackathons">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center specHeader">Hackathon List:</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>StuyHacks (3)</li>
-                            <li>defHacks (2)</li>
-                            <li>hackMann </li>
-                            <li>Clarifai Artificial Intelligence Hackathon</li>
-                            <li>HackCooper</li>
-                            <li>CSTUY</li>
-                            <li>Space Apps Nextgen</li>
-                            <li>LIHacks</li>
-                            <li>HackNYU</li>
-			    <li>lewhacks</li>
-			    <li>snowhacks</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row contact">
-                <div class="col-md-12">
-                    <h2>Contact:</h2>
-                    <p><script>document.write(String.fromCharCode(83, 69, 85, 86, 69, 78, 68, 64, 71, 77, 65, 73, 76, 46, 67, 79, 77).toLowerCase());</script><br>
-                    @Jonw27
-                    <a href="https://github.com/Jonw27"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </p>    
-                </div>
-            </div>
-        </div>
-        <script src="js/proton-2.1.0.min.js"></script>
-            <script>
-			var proton;
-			var renderer;
-			var emitter1, emitter2;
-			var stats;
-			var canvas;
-			var attractionBehaviours = [];
-			var R = 150;
-			var tha = 0;
-			var mouseObj;
-			
-			Main();
-			function Main() {
-				canvas = document.getElementById("testCanvas");
-				canvas.width = 1120;
-				canvas.height = 610;
-
-				createProton();
-				tick();
-				canvas.addEventListener('mousedown', mousedownHandler, false);
-				canvas.addEventListener('mouseup', mouseupHandler, false);
-			}
-
-			function createProton() {
-				mouseObj = {
-					x : 1120 / 2,
-					y : 610 / 2
-				};
-				proton = new Proton;
-				emitter1 = createImageEmitter(canvas.width / 2 + R, canvas.height / 2, '#4F1500', '#0029FF');
-				emitter2 = createImageEmitter(canvas.width / 2 - R, canvas.height / 2, '#004CFE', '#6600FF');
-
-				renderer = new Proton.Renderer('webgl', proton, canvas);
-				renderer.blendFunc("SRC_ALPHA", "ONE");
-				renderer.start();
-			}
-
-			function createImageEmitter(x, y, color1, color2) {
-				var emitter = new Proton.Emitter();
-				emitter.rate = new Proton.Rate(new Proton.Span(5, 7), new Proton.Span(.01, .02));
-				emitter.addInitialize(new Proton.Mass(1));
-				emitter.addInitialize(new Proton.Life(1));
-				emitter.addInitialize(new Proton.ImageTarget(['imgs/particle.png'], 32));
-				emitter.addInitialize(new Proton.Radius(40));
-				emitter.addBehaviour(new Proton.Alpha(1, 0));
-				emitter.addBehaviour(new Proton.Color(color1, color2));
-				emitter.addBehaviour(new Proton.Scale(3.5, 0.1));
-				emitter.addBehaviour(new Proton.CrossZone(new Proton.RectZone(0, 0, 1003, 610), 'dead'));
-				var attractionBehaviour = new Proton.Attraction(mouseObj, 0, 0);
-				attractionBehaviours.push(attractionBehaviour);
-				emitter.addBehaviour(attractionBehaviour);
-
-				emitter.p.x = x;
-				emitter.p.y = y;
-				emitter.emit();
-				proton.addEmitter(emitter);
-				return emitter;
-			}
-
-			function emitterRun() {
-				emitter1.p.x = canvas.width / 2 + R * Math.sin(Math.PI / 2 + tha);
-				emitter1.p.y = canvas.height / 2 + R * Math.cos(Math.PI / 2 + tha);
-				emitter2.p.x = canvas.width / 2 + R * Math.sin(-Math.PI / 2 + tha);
-				emitter2.p.y = canvas.height / 2 + R * Math.cos(-Math.PI / 2 + tha);
-				tha += .1;
-			}
-
-			function mousedownHandler(e) {
-				for (var i = 0; i < 2; i++)
-					attractionBehaviours[i].reset(mouseObj, 120, 200);
-			}
-
-			function mouseupHandler(e) {
-				setTimeout(function() {
-					for (var i = 0; i < 2; i++)
-						attractionBehaviours[i].reset(mouseObj, 0, 0);
-				}, 1000);
-			}
-
-			function tick() {
-				requestAnimationFrame(tick);
-				emitterRun();
-				proton.update();
-			}
-		</script>
-        <script src="https://use.fontawesome.com/040338bb70.js"></script>
+        <button onclick="minimal(this);">Minimal</button>
+        <button onclick="reasonable(this);">Reasonable</button>
+        <button onclick="lengthy(this);">Lengthy</button>
+        <button onclick="teenage(this);">Teenage Lengthy</button>
+        <span id="content">
+            <p><span id="primary">Hey.</span> I'm Jonathan.</p>
+    <p>I'm a self-professed software engineer.</p>
+    <p>You can find some of my work on <a href="https://github.com/Jonw27">github</a> and <a href="https://jonathan.devport.co">devport</a>.</p>    
+    <p>I'm also a high school student.</p>    
+        <p>Do you want to chat? <a href="mailto:seuvend@gmail.com">Email</a></p> 
+        </span>  
     </body>
 </html>
