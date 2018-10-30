@@ -4,48 +4,81 @@ https://keybase.io/reallyidk
 
 I hereby claim:
 
-  * I am an admin of https://hackthe.tech
+  * I am an admin of https://misgivings.me
   * I am reallyidk (https://keybase.io/reallyidk) on keybase.
-  * I have a public key ASBl4WLyE7HIwqfx_jg-swIwNjUIUYZ0lKSaUWKf15IKywo
+  * I have a public key with fingerprint 3704 0C9A 70F1 6590 B664  0C8F E073 43A1 352C 03A7
 
 To do so, I am signing this object:
 
 {
-  body: {
-    key: {
-      eldest_kid: 012065e162f213b1c8c2a7f1fe383eb3023036350851867494a49a51629fd7920acb0a,
-      host: keybase.io,
-      kid: 012065e162f213b1c8c2a7f1fe383eb3023036350851867494a49a51629fd7920acb0a,
-      uid: a6134dacbdfa1fee8ab087936c3f9919,
-      username: reallyidk
+  "body": {
+    "key": {
+      "eldest_kid": "012065e162f213b1c8c2a7f1fe383eb3023036350851867494a49a51629fd7920acb0a",
+      "fingerprint": "37040c9a70f16590b6640c8fe07343a1352c03a7",
+      "host": "keybase.io",
+      "key_id": "e07343a1352c03a7",
+      "kid": "0101f647eecb7eb9655cd7450e53f6e2f966efb4f7e67f54ec35ad0e54142a1b12120a",
+      "uid": "a6134dacbdfa1fee8ab087936c3f9919",
+      "username": "reallyidk"
     },
-    merkle_root: {
-      ctime: 1514039998,
-      hash: e10cacb69dfe45d3b42d93baf1fd0e88c2be8b29f43751de6059c6825fd831646d6f08fce3281c356c10752d06171b9524ff9fb3857dfdd27bff6e8a06549492,
-      hash_meta: 61dbb2d9d5a37b7161caa5258825d1ba441bffe3376a7885ebc49e74d9133652,
-      seqno: 1852913
+    "merkle_root": {
+      "ctime": 1540862800,
+      "hash_meta": "87ae121219099535fd9c864fed7c9111d79f9f7e14e4da856544b1c4893e6367",
+      "seqno": 3868449
     },
-    service: {
-      hostname: hackthe.tech,
-      protocol: https:
+    "revoke": {
+      "sig_ids": [
+        "024ecd80e3cc8aec5442642f8a057455cbf29edf41941e760af5408f02abb9c80f"
+      ]
     },
-    type: web_service_binding,
-    version: 1
+    "service": {
+      "hostname": "misgivings.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
   },
-  client: {
-    name: keybase.io go client,
-    version: 1.0.38
-  },
-  ctime: 1514040033,
-  expire_in: 504576000,
-  prev: 143b795335e9d34c44573005d1af89fa7bf7358b56745783feb111545f6a0db4,
-  seqno: 4,
-  tag: signature
+  "ctime": 1540862824,
+  "expire_in": 157680000,
+  "prev": "db7c0890025dba4ea2df82234b270a9f64f35c7fa5f7c9ec9d3dae9944f84184",
+  "seqno": 13,
+  "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZeFi8hOxyMKn8f44PrMCMDY1CFGGdJSkmlFin9eSCssKp3BheWxvYWTFA0V7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNjVlMTYyZjIxM2IxYzhjMmE3ZjFmZTM4M2ViMzAyMzAzNjM1MDg1MTg2NzQ5NGE0OWE1MTYyOWZkNzkyMGFjYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjVlMTYyZjIxM2IxYzhjMmE3ZjFmZTM4M2ViMzAyMzAzNjM1MDg1MTg2NzQ5NGE0OWE1MTYyOWZkNzkyMGFjYjBhIiwidWlkIjoiYTYxMzRkYWNiZGZhMWZlZThhYjA4NzkzNmMzZjk5MTkiLCJ1c2VybmFtZSI6InJlYWxseWlkayJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxNDAzOTk5OCwiaGFzaCI6ImUxMGNhY2I2OWRmZTQ1ZDNiNDJkOTNiYWYxZmQwZTg4YzJiZThiMjlmNDM3NTFkZTYwNTljNjgyNWZkODMxNjQ2ZDZmMDhmY2UzMjgxYzM1NmMxMDc1MmQwNjE3MWI5NTI0ZmY5ZmIzODU3ZGZkZDI3YmZmNmU4YTA2NTQ5NDkyIiwiaGFzaF9tZXRhIjoiNjFkYmIyZDlkNWEzN2I3MTYxY2FhNTI1ODgyNWQxYmE0NDFiZmZlMzM3NmE3ODg1ZWJjNDllNzRkOTEzMzY1MiIsInNlcW5vIjoxODUyOTEzfSwic2VydmljZSI6eyJob3N0bmFtZSI6ImhhY2t0aGUudGVjaCIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM4In0sImN0aW1lIjoxNTE0MDQwMDMzLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjE0M2I3OTUzMzVlOWQzNGM0NDU3MzAwNWQxYWY4OWZhN2JmNzM1OGI1Njc0NTc4M2ZlYjExMTU0NWY2YTBkYjQiLCJzZXFubyI6NCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAYJKZjfXxgqK9dP4owhUTORyB5m3cwdSNjmKS+ojK46GKu694FoPGPnMac835u7AKeKRyhXiM9bU+xy/P9XDkPqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg6YWXjWVW4EjaId5zSRCrLI+mEKMS1e1kG6nK+DTdveOjdGFnzQICp3ZlcnNpb24B
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMQBAnicbZN9bBRFGMavgGKPGlACNshXti2YUGF2Z3Z2p4QPBUqlAakhRihwzO7O
+XLd3vTtvt0crtkT5UNoiFQyG0EiAKII1rSKItUCpQCBA2wCClFhIQFo1gNgqJCh1
+toGYGP/azM7zPu/z/mbm6JP9ff6kq86M7Wpm/11Jp5pLin35F/cWrJCMqFUqZa2Q
+Qqzvw8IWc9xAyLakLAnICsAqk7HCFRkasqmbCtW4zBnUITMgUCCAGKpAV2Uda4gg
+ighVhZ5wSyMKoKYBqJQpcTsSZPFY3I64whZqAAGTUA1wGasEGBiLtc4Z0CCCVIaq
+YgJINVFYEHW8ChHOoA6baEfFP7EI9MX7H/2j3EDmGGmMmYbGDIJV1bQ0pAKmQo6Z
+wgnGjBuIawxrXEXMhCq1xC6SkUJlQ1bE4F7u4j47imWILDGLxamYnenUALpGIDYh
+J0QmntBh8QgtYkIdZzQcLrWtkFSWKRWxeCjMAvFo1PXomq7taWQVAR0rOgBiQuoU
+BIqYS0WprlHm9ZYJIESFKreIqWPEmaWZRJZlwZQTEVpGTOTRVawiJE4F6QQyDLEH
+wGGvR6JSFtSxjhARCeIsEQ0xr7ljBwU3R8rKl4AiZrZ0wKBp6pSZwkfBSOE6Barg
+pJoGVwizOJIJkpmGAeVeZA4UahgiE+DSkjKvWTxhm33m3kE9BFBkO0E7IU7cmSjW
+mVIsHnWjZjQstgpcN+ZkeWDc0pinXc6MwEOXgGFHLFElKhIs7tjRiAAllP9hpqBM
+iZXE7DgL2J5C1bDg6JGMiVGFpWVoJtAJAIpqGRQxqlhcVxSIDEUDlIh7waFqapyq
+XFBlJrGgRRkhCHEdyTr6F6IMRU4aFJ4CXYS6xXEmlTUfWTzAl+T3Pf5YP+8B+fzJ
+Qx49q6a1gx+Qa9aBylU9PyvLcp+F3zzQ7393p259zc5T8atLm+1IW7ayO9Wsut3Y
+tXZ8+9j6lB2XDlFpXNfwXxpHr847M2hfcJ3R8QlsnxNm7pVhBy8OvDmnp3B2z9uT
+BtOcpJvnsnLrWg4+tXt3fUfrwm6/umRMtbN6e/n6l4tPp73QOrb8zd7z5beup2an
+pN3pGlQ0d3pydcfIQ8m9Nc9t9H9Vu+7smddudNfUjbt34N64wl24Xj2b+mp11bTy
+M22jY98HLictvLtIy7Y/jfm7g8c6hw31H983e+jWxjUarP41J/PElJzTVXuaVs8Y
+k7EhOu2DvL3BitDnFTcuHc3AVw8/Xbi/8fCXv5Xk/7Xgz49TfBOGp1faC2JyVdvJ
+jJLk90YonemX62qPjQLwYuEJsiS/M33gD3Oz2ycWj+nelMDTV03Kyw1If1ybgAuP
+N03/er42uWfkhc2Tc9+f0rClodaa2rpi88bujsT5bf26U8c3d1Xu2DZkx5WGESt3
+XrdmvpRx8ovlFfMGhowrtq9p5ekP0+umntNHfjtrvjXg2i7auDbt95alUyvmvbOl
+pfWN3Jr08kG9nX9vyh17e//i8xsiU96NvugMmPHKcPdQy/bqmbfGp114q3DZpLa8
+oPbME2tGXf6so9WtzC67cKTeshflH5+1rTrto+fv/3S3PT/8Y8OcRI+zGCT1bi09
+uwcsP9pVd2vY4ORjPb3/AMrgAqc=
+=6wUU
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -53,3 +86,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/reallyidk
 
 ==================================================================
+
