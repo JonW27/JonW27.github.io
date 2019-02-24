@@ -3,7 +3,18 @@
     <head>
         <title>Jonathan Wong</title>
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
         <link rel="stylesheet" href="css/index.css" type="text/css">
+        <style>
+            .mapboxgl-popup {
+                max-width: 200px;
+            }
+            .strike-through {
+                text-decoration: line-through;
+            }
+        </style>
+
     </head>
     <body>
         <span id="content">
@@ -38,9 +49,81 @@
         
         <br><br>
         
-        <div>Eventually going to put a google maps thing here, with pins for all the hackathon locations I've been too (Its <span style="text-decoration: line-through">like 16!</span> 18).<br><h2>Past</h2>hackbu (Binghamton, NY) - Feb 09<br>treehacks (Palo Alto, CA) - Feb 16
-	  <h2>Pending</h2>
-	  hackdartmouth
-	</div>
+        <div>Eventually going to <span class="strike-through">put a google maps thing here, with pins for all the hackathon locations I've been too</span> add mapboxgl-spiderfier so that all the clustered hackathons in downtown NYC will be much easier to see (They're not all there yet). You'll notice the recurrent theme of failing. (Its <span class="strike-through">like 16!</span> 18).<br><h2>Past</h2>hackbu (Binghamton, NY) - Feb 09<br>treehacks (Palo Alto, CA) - Feb 16
+            <div id='map' style='width: 600px; height: 450px;'></div>
+            <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiamN3ZyIsImEiOiJjam8yMXZmZW4waHF2M3BxczVlN2owNHdtIn0.Rh_tPc0gmfKIeaozzMPuww';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-90, 40.7],
+                zoom: 2
+            });
+
+            hackathons = [{
+                name : "CSTUY def hacks('Winter', 2015)",
+                yr : "Feb 2015",
+                latLng : [-73.99, 40.73],
+                desc : "This was my first hackathon. It was at Facebook's NY headquarters and organized by a bunch of teachers from my high school. We completely trolled this one, but got an honorable mention."
+            },
+            {
+                name : "defhacks",
+                yr : "Spring 2016, Fall 2016",
+                latLng : [-73.98, 40.74],
+                desc : "This was a student split of the  CSTUY one held at ThoughtWorks.<br>" + 
+                "2016 - Built a calculator application. Obviously didn't win anything.<br>" +
+                "2018 - Hitched a ride with a guy who now works at Trail of Bits. We won the best privacy hack."
+            },
+            {
+                name : "HackMann",
+                yr : "May 2016",
+                latLng : [-73.89, 40.89],
+                desc : "Built a web interface to a steganography library at the Horace Mann School. The most notable thing about this hackathon was that the 1 train was down and I had to take a shuttle bus from W125 all the way to 246 and back. The organizers didn't realize why the number of people coming was so low until I told them."
+            },
+            {
+                name : "LIhacks",
+                yr : "August 2016",
+                latLng : [-73.55, 40.75],
+                desc : "Built some hackathon platform that somehow used Tenor; was supposed to get prize, but organizers flaked on us. Remembered for awesome nerf fights. Was at LaunchPadLI. The speaker was pretty inspiring."
+            },
+            {
+                name : "HackCooper",
+                yr : "2016, 2018",
+                latLng : [-73.99, 40.72],
+                desc : "2016 was mostly awesome swag raids since we got to the sponsor room before anyone else. I partnered to try to build some sort of text sentiment analyzer. It failed.<br>" +
+                "2018 was the culmination of creating a team, coming up with an idea a month before, creating outlines, prototypes and subtasks in an asana board for a social phone usage app. Turns out there's already something called momentum. Yep, it failed."
+            },
+            {
+                name : "aihacks",
+                yr : "Fall 2015",
+                latLng : [-73.98, 40.73],
+                desc : "With the help of mentors, built a fb messenger bot in node that stimulated then-presidential candidate, now president, Donald Trump's talking patterns. This was an adult-inclusive hackathon so we competed against people from salesforce and google. The grand prize winner were <a href='https://github.com/shrugs'>these</a> <a href='https://github.com/jamiis'>guys</a>."
+            },
+            {
+                name : "TreeHacks",
+                yr : "Feb 2019",
+                latLng : [-122.16, 37.4],
+                desc : "I got travel reimbursement! Took a bus to a train to another train to an airplane to another bus to a train to a bus (I've got a blog post on this). Like normal, I managed to not win anything. Might've had to do with lack of team planning (ahem ahem). This one was totally winnable and proves that you should always ask for help from mentors or sponsors even if you literally have no questions. I built a 'smart' push notification blocker."
+            }
+            ]
+            hackathons.forEach(function(elem){
+                var popup = new mapboxgl.Popup({
+                    offset : 25
+                })
+                .setHTML(
+                    "<b>" + elem.name + "</b><br>"
+                    + "<em>" + elem.yr + "</em><br>" +
+                    elem.desc
+                );
+
+                new mapboxgl.Marker()
+                .setLngLat(elem.latLng)
+                .setPopup(popup)
+                .addTo(map);
+            });
+            </script>
+	    <h2>Pending</h2>
+	    hackdartmouth
+	    </div>
     </body>
 </html>
